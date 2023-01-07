@@ -1,61 +1,61 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
 <head>
     <meta charset="utf-8">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Title -->
-    <title>@yield('title')</title>
+    <title><?php echo $__env->yieldContent('title'); ?></title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="">
     <!-- Font -->
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="{{asset('/assets/admin')}}/css/vendor.min.css">
-    <link rel="stylesheet" href="{{asset('/assets/admin')}}/vendor/icon-set/style.css">
+    <link rel="stylesheet" href="<?php echo e(asset('/assets/admin')); ?>/css/vendor.min.css">
+    <link rel="stylesheet" href="<?php echo e(asset('/assets/admin')); ?>/vendor/icon-set/style.css">
     <!-- CSS Front Template -->
-    <link rel="stylesheet" href="{{asset('/assets/admin')}}/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{asset('/assets/admin')}}/css/theme.minc619.css?v=1.0">
-    <link rel="stylesheet" href="{{asset('/assets/admin')}}/css/style.css">
-    @stack('css_or_js')
+    <link rel="stylesheet" href="<?php echo e(asset('/assets/admin')); ?>/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo e(asset('/assets/admin')); ?>/css/theme.minc619.css?v=1.0">
+    <link rel="stylesheet" href="<?php echo e(asset('/assets/admin')); ?>/css/style.css">
+    <?php echo $__env->yieldPushContent('css_or_js'); ?>
 
     <script
-        src="{{asset('/assets/admin')}}/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
-    <link rel="stylesheet" href="{{asset('/assets/admin')}}/css/toastr.css">
-    <link rel="stylesheet" href="{{asset('/assets/admin')}}/css/custom-helper.css">
+        src="<?php echo e(asset('/assets/admin')); ?>/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
+    <link rel="stylesheet" href="<?php echo e(asset('/assets/admin')); ?>/css/toastr.css">
+    <link rel="stylesheet" href="<?php echo e(asset('/assets/admin')); ?>/css/custom-helper.css">
 </head>
 
 <body class="footer-offset">
 
-{{--loader--}}
+
 <div class="container">
     <div class="row">
         <div class="col-md-12">
             <div id="loading" style="display: none;">
                 <div style="position: fixed;z-index: 9999; left: 40%;top: 37% ;width: 100%">
-                    <img width="200" src="{{asset('/assets/admin/img/loader.gif')}}">
+                    <img width="200" src="<?php echo e(asset('/assets/admin/img/loader.gif')); ?>">
                 </div>
             </div>
         </div>
     </div>
 </div>
-{{--loader--}}
+
 
 <!-- Builder -->
-@include('layouts.admin.partials._front-settings')
+<?php echo $__env->make('layouts.admin.partials._front-settings', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <!-- End Builder -->
 
 <!-- JS Preview mode only -->
-@include('layouts.admin.partials._header')
-@include('layouts.admin.partials._sidebar')
+<?php echo $__env->make('layouts.admin.partials._header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<?php echo $__env->make('layouts.admin.partials._sidebar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <!-- END ONLY DEV -->
 
 <main id="content" role="main" class="main pointer-event">
     <!-- Content -->
-@yield('content')
+<?php echo $__env->yieldContent('content'); ?>
 <!-- End Content -->
 
     <!-- Footer -->
-@include('layouts.admin.partials._footer')
+<?php echo $__env->make('layouts.admin.partials._footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <!-- End Footer -->
 
     <div class="modal fade" id="popup-modal">
@@ -66,10 +66,11 @@
                         <div class="col-12">
                             <center>
                                 <h2 style="color: rgba(96,96,96,0.68)">
-                                    <i class="tio-shopping-cart-outlined"></i> {{translate('You have new order, Check Please.')}}
+                                    <i class="tio-shopping-cart-outlined"></i> <?php echo e(translate('You have new order, Check Please.')); ?>
+
                                 </h2>
                                 <hr>
-                                <button onclick="check_order()" class="btn btn-primary">{{translate('Ok, let me check')}}</button>
+                                <button onclick="check_order()" class="btn btn-primary"><?php echo e(translate('Ok, let me check')); ?></button>
                             </center>
                         </div>
                     </div>
@@ -82,28 +83,29 @@
 <!-- ========== END MAIN CONTENT ========== -->
 
 <!-- ========== END SECONDARY CONTENTS ========== -->
-<script src="{{asset('/assets/admin')}}/js/custom.js"></script>
+<script src="<?php echo e(asset('/assets/admin')); ?>/js/custom.js"></script>
 <!-- JS Implementing Plugins -->
 
-@stack('script')
+<?php echo $__env->yieldPushContent('script'); ?>
 
 <!-- JS Front -->
-<script src="{{asset('/assets/admin')}}/js/vendor.min.js"></script>
-<script src="{{asset('/assets/admin')}}/js/theme.min.js"></script>
-<script src="{{asset('/assets/admin')}}/js/sweet_alert.js"></script>
-<script src="{{asset('/assets/admin')}}/js/toastr.js"></script>
-{!! Toastr::message() !!}
+<script src="<?php echo e(asset('/assets/admin')); ?>/js/vendor.min.js"></script>
+<script src="<?php echo e(asset('/assets/admin')); ?>/js/theme.min.js"></script>
+<script src="<?php echo e(asset('/assets/admin')); ?>/js/sweet_alert.js"></script>
+<script src="<?php echo e(asset('/assets/admin')); ?>/js/toastr.js"></script>
+<?php echo Toastr::message(); ?>
 
-@if ($errors->any())
+
+<?php if($errors->any()): ?>
     <script>
-        @foreach($errors->all() as $error)
-        toastr.error('{{$error}}', Error, {
+        <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+        toastr.error('<?php echo e($error); ?>', Error, {
             CloseButton: true,
             ProgressBar: true
         });
-        @endforeach
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </script>
-@endif
+<?php endif; ?>
 <!-- JS Plugins Init. -->
 <script>
     $(document).on('ready', function () {
@@ -164,9 +166,9 @@
     });
 </script>
 
-@stack('script_2')
+<?php echo $__env->yieldPushContent('script_2'); ?>
 <audio id="myAudio">
-    <source src="{{asset('/assets/admin/sound/notification.mp3')}}" type="audio/mpeg">
+    <source src="<?php echo e(asset('/assets/admin/sound/notification.mp3')); ?>" type="audio/mpeg">
 </audio>
 
 <script>
@@ -181,10 +183,10 @@
     }
 </script>
 <script>
-    @if(Helpers::module_permission_check('order_management'))
+    <?php if(Helpers::module_permission_check('order_management')): ?>
         setInterval(function () {
             $.get({
-                url: '{{route('admin.get-restaurant-data')}}',
+                url: '<?php echo e(route('admin.get-restaurant-data')); ?>',
                 dataType: 'json',
                 success: function (response) {
                     let data = response.data;
@@ -195,22 +197,22 @@
                 },
             });
         }, 10000);
-    @endif
+    <?php endif; ?>
 
     function check_order() {
-        location.href = '{{route('admin.order.list',['status'=>'pending'])}}';
+        location.href = '<?php echo e(route('admin.order.list',['status'=>'pending'])); ?>';
     }
 
     function route_alert(route, message) {
         Swal.fire({
-            title: '{{translate("Are you sure?")}}',
+            title: '<?php echo e(translate("Are you sure?")); ?>',
             text: message,
             type: 'warning',
             showCancelButton: true,
             cancelButtonColor: 'default',
             confirmButtonColor: '#01684b',
-            cancelButtonText: '{{translate("No")}}',
-            confirmButtonText: '{{translate("Yes")}}',
+            cancelButtonText: '<?php echo e(translate("No")); ?>',
+            confirmButtonText: '<?php echo e(translate("Yes")); ?>',
             reverseButtons: true
         }).then((result) => {
             if (result.value) {
@@ -221,14 +223,14 @@
 
     function form_alert(id, message) {
         Swal.fire({
-            title: '{{translate("Are you sure?")}}',
+            title: '<?php echo e(translate("Are you sure?")); ?>',
             text: message,
             type: 'warning',
             showCancelButton: true,
             cancelButtonColor: 'default',
             confirmButtonColor: '#01684b',
-            cancelButtonText: '{{translate("No")}}',
-            confirmButtonText: '{{translate("Yes")}}',
+            cancelButtonText: '<?php echo e(translate("No")); ?>',
+            confirmButtonText: '<?php echo e(translate("Yes")); ?>',
             reverseButtons: true
         }).then((result) => {
             if (result.value) {
@@ -238,7 +240,7 @@
     }
 
     function call_demo(){
-        toastr.info('{{translate("Disabled for demo version!")}}')
+        toastr.info('<?php echo e(translate("Disabled for demo version!")); ?>')
     }
 </script>
 
@@ -283,7 +285,8 @@
 
 <!-- IE Support -->
 <script>
-    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="{{asset('/assets/admin')}}/vendor/babel-polyfill/polyfill.min.js"><\/script>');
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="<?php echo e(asset('/assets/admin')); ?>/vendor/babel-polyfill/polyfill.min.js"><\/script>');
 </script>
 </body>
 </html>
+<?php /**PATH /home/909502.cloudwaysapps.com/dphjjcvmmc/public_html/resources/views/layouts/admin/app.blade.php ENDPATH**/ ?>
