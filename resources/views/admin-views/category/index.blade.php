@@ -13,7 +13,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/category.png')}}" class="w--24" alt="">
+                    <img src="{{asset('assets/admin/img/category.png')}}" class="w--24" alt="">
                 </span>
                 <span>
                     {{translate('category_setup')}}
@@ -68,7 +68,7 @@
                                     <div class="col-sm-6">
                                         <div>
                                             <div class="text-center mb-3">
-                                                <img id="viewer" class="img--105" src="{{ asset('public/assets/admin/img/160x160/1.png') }}" alt="image" />
+                                                <img id="viewer" class="img--105" src="{{ asset('assets/admin/img/160x160/1.png') }}" alt="image" />
                                             </div>
                                         </div>
                                         <label class="form-label text-capitalize">{{ translate('category image') }}</label><small class="text-danger">* ( {{ translate('ratio') }}
@@ -132,7 +132,7 @@
                                     <td class="text-center">{{$categories->firstItem()+$key}}</td>
                                     <td>
                                         <img src="{{asset('storage/app/public/category')}}/{{$category['image']}}"
-                                            onerror="this.src='{{asset('public/assets/admin/img/400x400/img2.jpg')}}'" class="img--50 ml-3" alt="">
+                                            onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'" class="img--50 ml-3" alt="">
                                     </td>
                                     <td>
                                     <span class="d-block font-size-sm text-body text-trim-50">
@@ -177,7 +177,7 @@
                                 
                         @if(count($categories) == 0)
                         <div class="text-center p-4">
-                            <img class="w-120px mb-3" src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
+                            <img class="w-120px mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
                             <p class="mb-0">{{translate('No_data_to_show')}}</p>
                         </div>
                         @endif

@@ -9,7 +9,7 @@
                     <?php ($restaurant_logo=\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value); ?>
                     <a class="navbar-brand" href="<?php echo e(route('admin.dashboard')); ?>" aria-label="Front">
                         <img class="w-100 side-logo"
-                             onerror="this.src='<?php echo e(asset('public/assets/admin/img/160x160/img2.jpg')); ?>'"
+                             onerror="this.src='<?php echo e(asset('assets/admin/img/160x160/img2.jpg')); ?>'"
                              src="<?php echo e(asset('storage/app/public/restaurant/'.$restaurant_logo)); ?>"
                              alt="Logo">
                     </a>

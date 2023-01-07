@@ -28,7 +28,7 @@
                                         <a class="topbar-link dropdown-toggle lang-country-flag" href="#" data-toggle="dropdown">
                                             <?php $__currentLoopData = $lang; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $data): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                                 <?php if($data['code']==$local): ?>
-                                                    <img src="<?php echo e(asset('public/assets/admin/img/google_translate_logo.png')); ?>" alt=""> <span><?php echo e($data['code']); ?></span>
+                                                    <img src="<?php echo e(asset('assets/admin/img/google_translate_logo.png')); ?>" alt=""> <span><?php echo e($data['code']); ?></span>
                                                 <?php endif; ?>
                                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                         </a>
@@ -57,7 +57,7 @@
                             <a class="js-hs-unfold-invoker btn btn-icon notify--icon"
                                href="<?php echo e(route('admin.message.list')); ?>">
                                 <i class="tio-messages-outlined"></i>
-                                <!-- <img class="tio-messages-outlined" src="<?php echo e(asset('/public/assets/admin/img/chat.png')); ?>" alt="admin/img"> -->
+                                <!-- <img class="tio-messages-outlined" src="<?php echo e(asset('/assets/admin/img/chat.png')); ?>" alt="admin/img"> -->
                                 <?php ($message=\App\Model\Conversation::where('checked',0)->count()); ?>
                                 <span class="amount">
                                     <?php echo e($message=\App\Model\Conversation::where('checked',0)->count()); ?>
@@ -104,7 +104,7 @@
                                     </div>
                                     <div class="avatar avatar-sm avatar-circle">
                                         <img class="avatar-img"
-                                            onerror="this.src='<?php echo e(asset('public/assets/admin/img/160x160/img1.jpg')); ?>'"
+                                            onerror="this.src='<?php echo e(asset('assets/admin/img/160x160/img1.jpg')); ?>'"
                                             src="<?php echo e(asset('storage/app/public/admin')); ?>/<?php echo e(auth('admin')->user()->image); ?>"
                                             alt="Image Description">
                                         <span class="avatar-status avatar-sm-status avatar-status-success"></span>
@@ -118,7 +118,7 @@
                                     <div class="media align-items-center">
                                         <div class="avatar avatar-sm avatar-circle mr-2">
                                             <img class="avatar-img"
-                                                 onerror="this.src='<?php echo e(asset('public/assets/admin/img/160x160/img1.jpg')); ?>'"
+                                                 onerror="this.src='<?php echo e(asset('assets/admin/img/160x160/img1.jpg')); ?>'"
                                                  src="<?php echo e(asset('storage/app/public/admin')); ?>/<?php echo e(auth('admin')->user()->image); ?>"
                                                  alt="Image Description">
                                         </div>

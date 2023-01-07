@@ -28,7 +28,7 @@
                                         <a class="topbar-link dropdown-toggle lang-country-flag" href="#" data-toggle="dropdown">
                                             @foreach($lang as $data)
                                                 @if($data['code']==$local)
-                                                    <img src="{{asset('public/assets/admin/img/google_translate_logo.png')}}" alt=""> <span>{{$data['code']}}</span>
+                                                    <img src="{{asset('assets/admin/img/google_translate_logo.png')}}" alt=""> <span>{{$data['code']}}</span>
                                                 @endif
                                             @endforeach
                                         </a>
@@ -38,7 +38,7 @@
                                                     <li>
                                                         <a class="dropdown-item pb-1 lang-country-flag"
                                                            href="{{route('admin.lang',[$data['code']])}}">
-{{--                                                           <img src="{{asset('public/assets/admin/img/flags')}}/{{$data['code']}}.png" alt="">--}}
+{{--                                                           <img src="{{asset('assets/admin/img/flags')}}/{{$data['code']}}.png" alt="">--}}
                                                             <span>{{\App\CentralLogics\Helpers::get_language_name($data['code'])}}</span>
                                                         </a>
                                                     </li>
@@ -57,7 +57,7 @@
                             <a class="js-hs-unfold-invoker btn btn-icon notify--icon"
                                href="{{route('admin.message.list')}}">
                                 <i class="tio-messages-outlined"></i>
-                                <!-- <img class="tio-messages-outlined" src="{{asset('/public/assets/admin/img/chat.png')}}" alt="admin/img"> -->
+                                <!-- <img class="tio-messages-outlined" src="{{asset('/assets/admin/img/chat.png')}}" alt="admin/img"> -->
                                 @php($message=\App\Model\Conversation::where('checked',0)->count())
                                 <span class="amount">
                                     {{$message=\App\Model\Conversation::where('checked',0)->count()}}
@@ -100,7 +100,7 @@
                                     </div>
                                     <div class="avatar avatar-sm avatar-circle">
                                         <img class="avatar-img"
-                                            onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                            onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
                                             src="{{asset('storage/app/public/admin')}}/{{auth('admin')->user()->image}}"
                                             alt="Image Description">
                                         <span class="avatar-status avatar-sm-status avatar-status-success"></span>
@@ -114,7 +114,7 @@
                                     <div class="media align-items-center">
                                         <div class="avatar avatar-sm avatar-circle mr-2">
                                             <img class="avatar-img"
-                                                 onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                                 onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
                                                  src="{{asset('storage/app/public/admin')}}/{{auth('admin')->user()->image}}"
                                                  alt="Image Description">
                                         </div>

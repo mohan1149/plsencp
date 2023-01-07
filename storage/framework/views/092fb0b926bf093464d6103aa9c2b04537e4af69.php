@@ -14,7 +14,7 @@
                 <a href="<?php echo e(route('admin.product.view',[$item['product_id']])); ?>">
                     <div class="rated-media d-flex align-items-center">
                         <img src="<?php echo e(asset('storage/app/public/product')); ?>/<?php echo e(json_decode($product['image'])[0]  ?? ''); ?>"
-                             onerror="this.src='<?php echo e(asset('public/assets/admin/img/400x400/img2.jpg')); ?>'" alt="<?php echo e($product->name); ?> image">
+                             onerror="this.src='<?php echo e(asset('assets/admin/img/400x400/img2.jpg')); ?>'" alt="<?php echo e($product->name); ?> image">
                         <span class="line--limit-1 w-0 flex-grow-1">
                             <?php echo e(isset($product)?substr($product->name,0,30) . (strlen($product->name)>20?'...':''):'not exists'); ?>
 

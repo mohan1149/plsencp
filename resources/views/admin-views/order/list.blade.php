@@ -69,7 +69,7 @@
                                 <a class="order--card h-100" href="{{route('admin.orders.list',['pending'])}}">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                            <img src="{{asset('public/assets/admin/img/delivery/pending.png')}}" alt="dashboard" class="oder--card-icon">
+                                            <img src="{{asset('assets/admin/img/delivery/pending.png')}}" alt="dashboard" class="oder--card-icon">
                                             <span>{{translate('pending')}}</span>
                                         </h6>
                                         <span class="card-title text-0661CB">
@@ -84,7 +84,7 @@
                                 <a class="order--card h-100" href="{{route('admin.orders.list',['confirmed'])}}">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                            <img src="{{asset('public/assets/admin/img/delivery/confirmed.png')}}" alt="dashboard" class="oder--card-icon">
+                                            <img src="{{asset('assets/admin/img/delivery/confirmed.png')}}" alt="dashboard" class="oder--card-icon">
                                             <span>{{translate('confirmed')}}</span>
                                         </h6>
                                         <span class="card-title text-107980">
@@ -98,7 +98,7 @@
                                 <a class="order--card h-100" href="{{route('admin.orders.list',['processing'])}}">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                            <img src="{{asset('public/assets/admin/img/delivery/processing.png')}}" alt="dashboard" class="oder--card-icon">
+                                            <img src="{{asset('assets/admin/img/delivery/processing.png')}}" alt="dashboard" class="oder--card-icon">
                                             <span>{{translate('packaging')}}</span>
                                         </h6>
                                         <span class="card-title text-danger">
@@ -112,7 +112,7 @@
                                 <a class="order--card h-100" href="{{route('admin.orders.list',['out_for_delivery'])}}">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                            <img src="{{asset('/public/assets/admin/img/delivery/out-for-delivery.png')}}" alt="dashboard" class="oder--card-icon">
+                                            <img src="{{asset('/assets/admin/img/delivery/out-for-delivery.png')}}" alt="dashboard" class="oder--card-icon">
                                             <span>{{translate('out_for_delivery')}}</span>
                                         </h6>
                                         <span class="card-title text-00B2BE">

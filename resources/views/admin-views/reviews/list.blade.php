@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/review.png')}}" class="w--24" alt="">
+                    <img src="{{asset('assets/admin/img/review.png')}}" class="w--24" alt="">
                 </span>
                 <span>
                     {{translate('product reviews')}} <span class="badge badge-pill badge-soft-secondary">{{ $reviews->total() }}</span>
@@ -64,7 +64,7 @@
                                     @if($review->product)
                                         @if (!empty(json_decode($review->product['image'],true)))
                                         <a href="{{route('admin.product.view',[$review['product_id']])}}" class="short-media">
-                                            <img onerror="this.src='{{asset('public/assets/admin/img/160x160/1.png')}}'"
+                                            <img onerror="this.src='{{asset('assets/admin/img/160x160/1.png')}}'"
                                                  src="{{asset('storage/app/public/product')}}//{{json_decode($review->product['image'],true)[0]}}">
                                             <div class="text-cont line--limit-2 max-150px">
                                                 {{$review->product['name']}}
@@ -126,7 +126,7 @@
                 </div>
                 @if(count($reviews) == 0)
                     <div class="text-center p-4">
-                        <img class="w-120px mb-3" src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
+                        <img class="w-120px mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
                         <p class="mb-0">{{translate('No_data_to_show')}}</p>
                     </div>
                 @endif

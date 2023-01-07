@@ -2,7 +2,7 @@
     <div class="card-body p-20px pb-0">
         <div class="btn--container justify-content-between align-items-center">
             <h5 class="card-title mb-2">
-                <img src="{{asset('/public/assets/admin/img/order-statistics.png')}}" alt="" class="card-icon">
+                <img src="{{asset('/assets/admin/img/order-statistics.png')}}" alt="" class="card-icon">
                 <span>{{translate('order_statistics')}}</span>
             </h5>
             <div class="mb-2">
