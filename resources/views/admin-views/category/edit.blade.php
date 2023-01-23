@@ -13,7 +13,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/category.png')}}" class="w--24" alt="">
+                    <img src="{{asset('assets/admin/img/category.png')}}" class="w--24" alt="">
                 </span>
                 <span>
                     @if($category->parent_id == 0)
@@ -82,8 +82,13 @@
                         @if($category->parent_id == 0)
                         <div class="col-sm-6">
                             <center>
+<<<<<<< HEAD
                                 <img class="img--105" id="viewer" onerror="this.src='{{asset('public/assets/admin/img/900x400/img1.jpg')}}'"
                                     src="{{asset('storage/category')}}/{{$category['image']}}" alt="image"/>
+=======
+                                <img class="img--105" id="viewer" onerror="this.src='{{asset('assets/admin/img/900x400/img1.jpg')}}'"
+                                    src="{{asset('storage/app/public/category')}}/{{$category['image']}}" alt="image"/>
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                             </center>
                             <label>{{\App\CentralLogics\translate('image')}}</label><small style="color: red">* ( {{\App\CentralLogics\translate('ratio')}} 3:1 )</small>
                             <div class="custom-file">

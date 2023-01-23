@@ -14,8 +14,13 @@
                 id="customer-{{$conv->user_id}}">
                 <div class="avatar avatar-lg avatar-circle">
                     <img class="avatar-img" style="width: 54px;height: 54px"
+<<<<<<< HEAD
                          src="{{asset('storage/profile/'.$user['image'])}}"
                          onerror="this.src='{{asset('public/assets/admin')}}/img/160x160/img1.jpg'"
+=======
+                         src="{{asset('storage/app/public/profile/'.$user['image'])}}"
+                         onerror="this.src='{{asset('assets/admin')}}/img/160x160/img1.jpg'"
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                          alt="Image Description">
                 </div>
                 <h5 class="sidebar_name mb-0 mr-3 d-none d-md-block">

@@ -1,0 +1,1 @@
+<?php /**PATH /home/909502.cloudwaysapps.com/dphjjcvmmc/public_html/resources/views/layouts/admin/partials/_front-settings.blade.php ENDPATH**/ ?>

@@ -6,12 +6,18 @@
         <!-- Product gallery-->
         <div class="modal--media-avatar">
             @if (!empty(json_decode($product['image'],true)))
+<<<<<<< HEAD
                 <img class="img-responsive" src="{{asset('storage/product')}}/{{json_decode($product['image'], true)[0]}}"
                  onerror="this.src='{{asset('public/assets/admin/img/160x160/2.png')}}'"
                  data-zoom="{{asset('storage/product')}}/{{json_decode($product['image'], true)[0]}}"
+=======
+                <img class="img-responsive" src="{{asset('storage/app/public/product')}}/{{json_decode($product['image'], true)[0]}}"
+                 onerror="this.src='{{asset('assets/admin/img/160x160/2.png')}}'"
+                 data-zoom="{{asset('storage/app/public/product')}}/{{json_decode($product['image'], true)[0]}}"
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                  alt="Product image" width="">
             @else
-                 <img src="{{asset('public/assets/admin/img/160x160/2.png')}}" >
+                 <img src="{{asset('assets/admin/img/160x160/2.png')}}" >
              @endif
             <div class="cz-image-zoom-pane"></div>
         </div>

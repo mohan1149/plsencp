@@ -8,8 +8,13 @@
                     @php($restaurant_logo=\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value)
                     <a class="navbar-brand" href="{{route('branch.dashboard')}}" aria-label="Front">
                         <img class="w-100 side-logo"
+<<<<<<< HEAD
                              onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'"
                              src="{{asset('storage/restaurant/'.$restaurant_logo)}}"
+=======
+                             onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'"
+                             src="{{asset('storage/app/public/restaurant/'.$restaurant_logo)}}"
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                              alt="Logo">
                     </a>
                     <!-- End Logo -->

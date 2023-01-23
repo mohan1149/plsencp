@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/employee.png')}}" class="w--20" alt="">
+                    <img src="{{asset('assets/admin/img/employee.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{translate('customers list')}} <span class="badge badge-soft-primary ml-2 badge-pill">{{\App\User::count()}}</span>
@@ -55,7 +55,7 @@
                                 {{ translate('options') }}</span>
                             <a id="export-excel" class="dropdown-item" href="{{route('admin.customer.export', ['search'=>Request::get('search')])}}">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{ asset('public/assets/admin') }}/svg/components/excel.svg"
+                                    src="{{ asset('assets/admin') }}/svg/components/excel.svg"
                                     alt="Image Description">
                                 {{ translate('excel') }}
                             </a>
@@ -92,8 +92,13 @@
                             <td class="table-column-pl-0">
                                 <a href="{{route('admin.customer.view',[$customer['id']])}}" class="product-list-media">
                                     <img class="rounded-full"
+<<<<<<< HEAD
                                          src="{{asset('storage/profile/'.$customer->image)}}"
                                         onerror="this.src='{{asset('/public/assets/admin/img/admin.png')}}'">
+=======
+                                         src="{{asset('storage/app/public/profile/'.$customer->image)}}"
+                                        onerror="this.src='{{asset('/assets/admin/img/admin.png')}}'">
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                                     <div class="table--media-body">
                                         <h5 class="title m-0">
                                             {{$customer['f_name']." ".$customer['l_name']}}
@@ -156,7 +161,7 @@
             </div>
             @if(count($customers) == 0)
             <div class="text-center p-4">
-                <img class="w-120px mb-3" src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
+                <img class="w-120px mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
                 <p class="mb-0">{{translate('No_data_to_show')}}</p>
             </div>
             @endif

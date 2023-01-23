@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/edit.png')}}" class="w--20" alt="">
+                    <img src="{{asset('assets/admin/img/edit.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{translate('Update Banner')}}
@@ -82,7 +82,11 @@
                                 <label class="upload--vertical">
                                     <input type="file" name="image" id="customFileEg1" class=""
                                             accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" hidden>
+<<<<<<< HEAD
                                     <img id="viewer" onerror="this.src='{{asset('public/assets/admin/img/upload-vertical.png')}}'" src="{{asset('storage/banner')}}/{{$banner['image']}}" alt="banner image"/>
+=======
+                                    <img id="viewer" onerror="this.src='{{asset('assets/admin/img/upload-vertical.png')}}'" src="{{asset('storage/app/public/banner')}}/{{$banner['image']}}" alt="banner image"/>
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                                 </label>
                             </div>
                         </div>

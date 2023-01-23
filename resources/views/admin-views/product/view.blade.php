@@ -13,7 +13,7 @@
             <div class="d-flex flex-wrap justify-content-between">
                 <h1 class="page-header-title text-break">
                     <span class="page-header-icon">
-                        <img src="{{asset('public/assets/admin/img/product.png')}}" alt="">
+                        <img src="{{asset('assets/admin/img/product.png')}}" alt="">
                     </span>
                     <span>{{Str::limit($product['name'], 30)}}</span>
                 </h1>
@@ -31,13 +31,18 @@
                                 <div class="d-flex flex-wrap align-items-center food--media justify-content-center">
                                 @if (!empty(json_decode($product['image'],true)))
                                     <img class="avatar avatar-xxl avatar-4by3 mr-4"
+<<<<<<< HEAD
                                         src="{{asset('storage/product')}}/{{json_decode($product['image'],true)[0]}}"
                                         onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'"
+=======
+                                        src="{{asset('storage/app/public/product')}}/{{json_decode($product['image'],true)[0]}}"
+                                        onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'"
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                                         alt="Image Description">
                                 @else
                                     <img
                                     class="avatar avatar-xxl avatar-4by3 mr-4"
-                                    src="{{asset('public/assets/admin/img/160x160/img2.jpg')}}"
+                                    src="{{asset('assets/admin/img/160x160/img2.jpg')}}"
                                     >
                                 @endif
 
@@ -150,7 +155,11 @@
                     <div class="card-body d-flex flex-column justify-content-center">
                                 @if($product->store)
                         <a class="resturant&#45;&#45;information-single" href="{{route('admin.vendor.view', $product->store_id)}}">
+<<<<<<< HEAD
                             <img class="img&#45;&#45;120 rounded mx-auto mb-3" onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/store/'.$product->store->logo)}}" alt="Image Description">
+=======
+                            <img class="img&#45;&#45;120 rounded mx-auto mb-3" onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/app/public/store/'.$product->store->logo)}}" alt="Image Description">
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                             <div class="text-center">
                                 <h5 class="text-capitalize text&#45;&#45;title font-semibold text-hover-primary d-block mb-1">
                                     {{$product->store['name']}}
@@ -256,8 +265,13 @@
                                         href="{{route('admin.customer.view',[$review['user_id']])}}">
                                             <div class="avatar avatar-circle">
                                                 <img class="avatar-img" width="75" height="75"
+<<<<<<< HEAD
                                                     onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
                                                     src="{{asset('storage/profile/'.$review->customer->image)}}"
+=======
+                                                    onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
+                                                    src="{{asset('storage/app/public/profile/'.$review->customer->image)}}"
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                                                     alt="Image Description">
                                             </div>
                                             <div class="ml-3">
@@ -319,7 +333,7 @@
             </div>
             @if(count($reviews)==0)
                 <div class="text-center p-4">
-                    <img class="w-120px mb-3" src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
+                    <img class="w-120px mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
                     <p class="mb-0">{{translate('No_data_to_show')}}</p>
                 </div>
             @endif

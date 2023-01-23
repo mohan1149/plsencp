@@ -3,7 +3,11 @@
         <td>{{$key+1}}</td>
         <td>
             <div class="table--media">
+<<<<<<< HEAD
                 <img class="rounded-full"  onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/delivery-man')}}/{{$dm['image']}}" alt="img">
+=======
+                <img class="rounded-full"  onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/app/public/delivery-man')}}/{{$dm['image']}}" alt="img">
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                 <div class="table--media-body">
                     <h5 class="title">
                         {{$dm['f_name'] . ' ' . $dm['l_name']}}
