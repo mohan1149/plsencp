@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/attribute.png')}}" class="w--24" alt="">
+                    <img src="{{asset('assets/admin/img/attribute.png')}}" class="w--24" alt="">
                 </span>
                 <span>
                     {{translate('attribute')}} {{translate('update')}}

@@ -13,7 +13,7 @@
     <div class="page-header">
         <h1 class="page-header-title">
             <span class="page-header-icon">
-                <img src="{{asset('public/assets/admin/img/employee.png')}}" class="w--24" alt="mail">
+                <img src="{{asset('assets/admin/img/employee.png')}}" class="w--24" alt="mail">
             </span>
             <span>
                 {{translate('Update Employee')}}
@@ -81,7 +81,7 @@
                             </label>
                             <center class="mb-4">
                                 <img class="initial-24" id="viewer"
-                                onerror="this.src='{{asset('public/assets/admin/img/upload-vertical.png')}}'"
+                                onerror="this.src='{{asset('assets/admin/img/upload-vertical.png')}}'"
                                 src="{{asset('storage/app/public/admin')}}/{{$e['image']}}" alt="Employee thumbnail"/>
                             </center>
                             <div class="form-group mb-0">
@@ -103,7 +103,7 @@
                                         @foreach(json_decode($e['identity_image'],true) as $img)
                                             <div class="two__item w-50">
                                                 <div class="max-h-140px existing-item">
-                                                    <img onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/app/public/admin').'/'.$img}}">
+                                                    <img onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/app/public/admin').'/'.$img}}">
                                                 </div>
                                             </div>
                                         @endforeach
@@ -158,7 +158,7 @@
 
 
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="{{asset('public/assets/back-end')}}/js/select2.min.js"></script>
+    <script src="{{asset('assets/back-end')}}/js/select2.min.js"></script>
     <script>
         function readURL(input) {
             if (input.files && input.files[0]) {
@@ -196,7 +196,7 @@
 
 
 
-<script src="{{asset('public/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
+<script src="{{asset('assets/admin/js/spartan-multi-image-picker.js')}}"></script>
 <script type="text/javascript">
     $(function () {
         $("#coba").spartanMultiImagePicker({
@@ -206,7 +206,7 @@
             groupClassName: 'two__item',
             maxFileSize: '',
             placeholderImage: {
-                image: '{{asset('public/assets/admin/img/upload-vertical.png')}}',
+                image: '{{asset('assets/admin/img/upload-vertical.png')}}',
                 width: '100%'
             },
             dropFileLabel: "Drop Here",

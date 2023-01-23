@@ -24,7 +24,7 @@
                     <div class="card-body">
                         <div class="__social-media-login-top">
                             <div class="__social-media-login-icon">
-                                <img src="{{asset('/public/assets/admin/img/google.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/google.png')}}" alt="">
                             </div>
                             <div class="text-center sub-txt">{{translate('Google Login')}}</div>
                             <div class="custom--switch switch--right">
@@ -45,7 +45,7 @@
                     <div class="card-body">
                         <div class="__social-media-login-top">
                             <div class="__social-media-login-icon">
-                                <img src="{{asset('/public/assets/admin/img/facebook.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/facebook.png')}}" alt="">
                             </div>
                             <div class="text-center sub-txt">{{translate('Facebook Login')}}</div>
                             <div class="custom--switch switch--right">
@@ -72,7 +72,7 @@
                             </div>
                             <div class="btn&#45;&#45;container justify-content-between">
                                 <button type="button" class="btn btn&#45;&#45;primary-fades">
-                                    <img src="{{asset('/public/assets/admin/img/bi_info-circle.png')}}" data-toggle="tooltip"
+                                    <img src="{{asset('/assets/admin/img/bi_info-circle.png')}}" data-toggle="tooltip"
                                          data-placement="top" data-original-title="{{translate('See Setup Instructions')}}" alt="">
                                     {{translate('See Setup Instructions')}}
                                 </button>

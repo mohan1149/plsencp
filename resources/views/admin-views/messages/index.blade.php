@@ -2,7 +2,7 @@
 
 @section('title', translate('Messages'))
 @push('css_or_js')
-<link rel="stylesheet" href="{{asset('/public/assets/admin/css/lightbox.min.css')}}">
+<link rel="stylesheet" href="{{asset('/assets/admin/css/lightbox.min.css')}}">
 @endpush
 @section('content')
 
@@ -11,7 +11,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/messages.png')}}" class="w--24" alt="">
+                    <img src="{{asset('assets/admin/img/messages.png')}}" class="w--24" alt="">
                 </span>
                 <span>
                     {{translate('Messages')}} <span class="badge badge-soft-primary ml-2" id="conversation_count"></span>
@@ -27,7 +27,7 @@
                     <div class="card-header border-0 px-0 mx-20px">
                         <div class="conv-open-user w-100">
                             <img class="w-47px" src="{{asset('storage/app/public/admin')}}/{{auth('admin')->user()->image}}"
-                                 onerror="this.src='{{asset('public/assets/admin')}}/img/160x160/img1.jpg'"
+                                 onerror="this.src='{{asset('assets/admin')}}/img/160x160/img1.jpg'"
                                     alt="Image Description">
                             <div class="info">
                                 <h6 class="subtitle mb-0">{{auth('admin')->user()->f_name}} {{auth('admin')->user()->l_name}}</h6>
@@ -56,7 +56,7 @@
                                             id="customer-{{$conv->user_id}}">
                                             <div class="conv-open-user w-100">
                                                 <img class="w-47px" src="{{asset('storage/app/public/profile/'.$user['image'])}}"
-                                                onerror="this.src='{{asset('public/assets/admin')}}/img/160x160/img1.jpg'"
+                                                onerror="this.src='{{asset('assets/admin')}}/img/160x160/img1.jpg'"
                                                 alt="Image Description">
                                                 <span class="status active"></span>
                                                 <div class="info">
@@ -78,7 +78,7 @@
             </div>
             <div class="col-md-8 col-xxl-9 pl-0 view-conversion" id="view-conversation">
                 <center class="h-100 d-flex justify-content-center align-items-center card __shadow rounded-left-0 py-5 py-md-0">
-                    <img src="{{asset('/public/assets/admin/img/view-conv.png')}}" class="mw-100" alt="">
+                    <img src="{{asset('/assets/admin/img/view-conv.png')}}" class="mw-100" alt="">
                     <div>
                         {{translate('Click from the customer list to view conversation')}}
                     </div>

@@ -8,7 +8,7 @@
         <!-- Page Header -->
         <div class="page-header">
             <div class="media align-items-center">
-                <img class="w-60px" src="{{asset('public/assets/admin')}}/svg/illustrations/credit-card.svg"
+                <img class="w-60px" src="{{asset('assets/admin')}}/svg/illustrations/credit-card.svg"
                          alt="Image Description">
                 <div class="media-body pl-3">
                     <h1 class="page-header-title mb-1">{{translate('sale')}} {{translate('report')}} {{translate('overview')}}</h1>

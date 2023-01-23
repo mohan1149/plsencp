@@ -18,7 +18,7 @@
             <td>
                 <a href="{{route('admin.product.view',[$row['product_id']])}}" target="_blank" class="product-list-media">
                     <img src="{{asset('storage/app/public/product')}}/{{$row['product_image']}}"
-                         onerror="this.src='{{asset('/public/assets/admin/img/160x160/2.png')}}'"
+                         onerror="this.src='{{asset('/assets/admin/img/160x160/2.png')}}'"
                     />
                     <h6 class="name line--limit-2">
                         {{$row['product_name']}}
@@ -56,7 +56,7 @@
 <!--  -->
 @if(count($data) === 0)
 <div class="text-center p-4">
-    <img class="mb-3 w-120px" src="{{asset('public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
+    <img class="mb-3 w-120px" src="{{asset('assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
     <p class="mb-0">No data to show</p>
 </div>
 @endif

@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/employee.png')}}" class="w--20" alt="">
+                    <img src="{{asset('assets/admin/img/employee.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{$dm['f_name'].' '.$dm['f_name']}}
@@ -42,7 +42,7 @@
                             <h5 class="subtitle">
                                 {{translate('total')}} {{translate('delivered')}} {{translate('orders')}}
                             </h5>
-                            <img class="resturant-icon" src="{{asset('/public/assets/admin/img/tick.png')}}" alt="img">
+                            <img class="resturant-icon" src="{{asset('/assets/admin/img/tick.png')}}" alt="img">
                         </div>
                     </div>
 
@@ -55,7 +55,7 @@
                             <h5 class="subtitle">
                                 {{translate('cash_in_hand')}}
                             </h5>
-                            <img class="resturant-icon" src="{{asset('/public/assets/admin/img/withdraw-amount.png')}}" alt="transactions">
+                            <img class="resturant-icon" src="{{asset('/assets/admin/img/withdraw-amount.png')}}" alt="transactions">
                         </div>
                     </div>
 
@@ -68,7 +68,7 @@
                             <h5 class="subtitle">
                                 {{translate('total_earning')}}
                             </h5>
-                            <img class="resturant-icon" src="{{asset('/public/assets/admin/img/pending.png')}}" alt="transactions">
+                            <img class="resturant-icon" src="{{asset('/assets/admin/img/pending.png')}}" alt="transactions">
                         </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                     <div class="col-md-6">
                         <div class="d-flex align-items-center justify-content-center">
                             <img class="avatar avatar-xxl avatar-4by3 mr-4 mw-120px initial-22"
-                                 onerror="this.src='{{asset('public/assets/admin/img/admin.png')}}'"
+                                 onerror="this.src='{{asset('assets/admin/img/admin.png')}}'"
                                  src="{{asset('storage/app/public/delivery-man')}}/{{$dm['image']}}"
                                  alt="Image Description">
                             <div class="d-block">
@@ -320,7 +320,7 @@
                                        href="{{route('admin.customer.view',[$review['user_id']])}}">
                                         <div class="avatar avatar-circle">
                                             <img class="avatar-img" width="75" height="75"
-                                                 onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                                 onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
                                                  src="{{asset('storage/app/public/profile/'.$review->customer->image)}}"
                                                  alt="Image Description">
                                         </div>

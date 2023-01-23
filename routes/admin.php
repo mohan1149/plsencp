@@ -14,7 +14,7 @@ Route::group(['namespace' => 'Admin', 'as' => 'admin.'], function () {
     });
     /*authentication*/
 
-    Route::group(['middleware' => ['admin', 'employee_active_check']], function () {
+    Route::group(['middleware' => ['admin', 'employee_active_check','localization']], function () {
             Route::get('/fcm/{id}', 'DashboardController@fcm')->name('dashboard');     //test route
             Route::get('/', 'DashboardController@dashboard')->name('dashboard');
             Route::post('order-stats', 'DashboardController@order_stats')->name('order-stats');

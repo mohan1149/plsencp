@@ -13,13 +13,13 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="<?php echo e(asset('public/assets/admin')); ?>/css/vendor.min.css">
-    <link rel="stylesheet" href="<?php echo e(asset('public/assets/admin')); ?>/vendor/icon-set/style.css">
+    <link rel="stylesheet" href="<?php echo e(asset('assets/admin')); ?>/css/vendor.min.css">
+    <link rel="stylesheet" href="<?php echo e(asset('assets/admin')); ?>/vendor/icon-set/style.css">
     <!-- CSS Front Template -->
-    <link rel="stylesheet" href="<?php echo e(asset('public/assets/admin')); ?>/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo e(asset('public/assets/admin')); ?>/css/theme.minc619.css?v=1.0">
-    <link rel="stylesheet" href="<?php echo e(asset('public/assets/admin')); ?>/css/style.css">
-    <link rel="stylesheet" href="<?php echo e(asset('public/assets/admin')); ?>/css/toastr.css">
+    <link rel="stylesheet" href="<?php echo e(asset('assets/admin')); ?>/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo e(asset('assets/admin')); ?>/css/theme.minc619.css?v=1.0">
+    <link rel="stylesheet" href="<?php echo e(asset('assets/admin')); ?>/css/style.css">
+    <link rel="stylesheet" href="<?php echo e(asset('assets/admin')); ?>/css/toastr.css">
 
 </head>
 
@@ -29,7 +29,7 @@
     <div class="auth-wrapper">
         <div class="auth-wrapper-left">
             <div class="auth-left-cont">
-                <img onerror="this.src='<?php echo e(asset('public/assets/admin/img/160x160/img2.jpg')); ?>'" src="<?php echo e(asset('storage/app/public/restaurant')); ?>/<?php echo e(\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value); ?>" alt="public/img">
+                <img onerror="this.src='<?php echo e(asset('assets/admin/img/160x160/img2.jpg')); ?>'" src="<?php echo e(asset('storage/app/public/restaurant')); ?>/<?php echo e(\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value); ?>" alt="public/img">
                 <h2 class="title"><?php echo e(translate('Your')); ?> <span class="d-block"><?php echo e(translate('All Fresh Food')); ?></span> <strong class="text--039D55"><?php echo e(translate('in one Place')); ?>....</strong></h2>
             </div>
         </div>
@@ -40,7 +40,7 @@
                     <div class="auth-header">
                         <div class="mb-5">
                             <div class="auth-wrapper-right-logo">
-                                <img onerror="this.src='<?php echo e(asset('public/assets/admin/img/160x160/img2.jpg')); ?>'" src="<?php echo e(asset('storage/app/public/restaurant')); ?>/<?php echo e(\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value); ?>" alt="public/img">
+                                <img onerror="this.src='<?php echo e(asset('assets/admin/img/160x160/img2.jpg')); ?>'" src="<?php echo e(asset('storage/app/public/restaurant')); ?>/<?php echo e(\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value); ?>" alt="public/img">
                             </div>
                             <h2 class="title"><?php echo e(translate('sign in')); ?></h2>
                             <div><?php echo e(translate('welcome_back')); ?></div>
@@ -151,11 +151,11 @@
 
 
 <!-- JS Implementing Plugins -->
-<script src="<?php echo e(asset('public/assets/admin')); ?>/js/vendor.min.js"></script>
+<script src="<?php echo e(asset('assets/admin')); ?>/js/vendor.min.js"></script>
 
 <!-- JS Front -->
-<script src="<?php echo e(asset('public/assets/admin')); ?>/js/theme.min.js"></script>
-<script src="<?php echo e(asset('public/assets/admin')); ?>/js/toastr.js"></script>
+<script src="<?php echo e(asset('assets/admin')); ?>/js/theme.min.js"></script>
+<script src="<?php echo e(asset('assets/admin')); ?>/js/toastr.js"></script>
 <?php echo Toastr::message(); ?>
 
 
@@ -234,7 +234,7 @@
 <?php endif; ?>
 <!-- IE Support -->
 <script>
-    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="<?php echo e(asset('public/assets/admin')); ?>/vendor/babel-polyfill/polyfill.min.js"><\/script>');
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="<?php echo e(asset('assets/admin')); ?>/vendor/babel-polyfill/polyfill.min.js"><\/script>');
 </script>
 </body>
 </html>

@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/banner.png')}}" class="w--20" alt="">
+                    <img src="{{asset('assets/admin/img/banner.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{translate('banner')}} {{translate('list')}}
@@ -62,7 +62,7 @@
                             <td>{{$key+1}}</td>
                             <td>
                                 <div>
-                                    <img class="img-vertical-150" src="{{asset('storage/app/public/banner')}}/{{$banner['image']}}" onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'">
+                                    <img class="img-vertical-150" src="{{asset('storage/app/public/banner')}}/{{$banner['image']}}" onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'">
                                 </div>
                             </td>
                             <td>
@@ -115,7 +115,7 @@
                     </tfoot>
                     @if(count($banners) == 0)
                         <div class="text-center p-4">
-                            <img class="w-120px mb-3" src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
+                            <img class="w-120px mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
                             <p class="mb-0">{{translate('No_data_to_show')}}</p>
                         </div>
                     @endif

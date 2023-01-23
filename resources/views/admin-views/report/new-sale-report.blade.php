@@ -7,7 +7,7 @@
         <!-- Page Header -->
         <div class="page-header">
             <div class="media align-items-center">
-                <img class="w-60px" src="{{asset('public/assets/admin')}}/svg/illustrations/credit-card.svg"
+                <img class="w-60px" src="{{asset('assets/admin')}}/svg/illustrations/credit-card.svg"
                      alt="Image Description">
                 <div class="media-body pl-3">
                     <h1 class="page-header-title mb-1">{{translate('sale')}} {{translate('report')}} {{translate('overview')}}</h1>
@@ -129,7 +129,7 @@
                                 <td>
                                     <a href="{{route('admin.product.view',[$product['id']])}}" target="_blank" class="product-list-media">
                                         <img src="{{asset('storage/app/public/product')}}/{{$product_image}}"
-                                             onerror="this.src='{{asset('/public/assets/admin/img/160x160/2.png')}}'"
+                                             onerror="this.src='{{asset('/assets/admin/img/160x160/2.png')}}'"
                                         />
                                         <h6 class="name line--limit-2">
                                             {{$product['name']}}
@@ -166,7 +166,7 @@
                     </div>
                     @if(count($order_details) === 0)
                         <div class="text-center p-4">
-                            <img class="mb-3 w-120px" src="{{asset('public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
+                            <img class="mb-3 w-120px" src="{{asset('assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
                             <p class="mb-0">No data to show</p>
                         </div>
                     @endif
