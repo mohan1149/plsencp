@@ -666,7 +666,7 @@
                                 <center>
                                     <img id="viewer" class="mt-4 border rounded mw-100 p-2"
                                          onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'"
-                                         src="{{asset('storage/app/public/restaurant/'.$logo)}}" alt="logo image"/>
+                                         src="{{asset('storage/restaurant/'.$logo)}}" alt="logo image"/>
                                 </center>
                             </div>
 

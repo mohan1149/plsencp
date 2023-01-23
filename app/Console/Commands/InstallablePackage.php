@@ -44,7 +44,7 @@ class InstallablePackage extends Command
     {
         Helpers::remove_dir('.idea');
         Artisan::call('debugbar:clear');
-        Helpers::remove_dir('storage/app/public');
+        Helpers::remove_dir('storage/');
         Madzipper::make('installation/public.zip')->extractTo('storage/app');
 
         $dot_env = base_path('.env');
