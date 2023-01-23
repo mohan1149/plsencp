@@ -92,8 +92,18 @@
                             <td class="table-column-pl-0">
                                 <a href="{{route('admin.customer.view',[$customer['id']])}}" class="product-list-media">
                                     <img class="rounded-full"
+<<<<<<< HEAD
                                          src="{{asset('storage/app/public/profile/'.$customer->image)}}"
                                         onerror="this.src='{{asset('/assets/admin/img/admin.png')}}'">
+=======
+<<<<<<< HEAD
+                                         src="{{asset('storage/profile/'.$customer->image)}}"
+                                        onerror="this.src='{{asset('/public/assets/admin/img/admin.png')}}'">
+=======
+                                         src="{{asset('storage/app/public/profile/'.$customer->image)}}"
+                                        onerror="this.src='{{asset('/assets/admin/img/admin.png')}}'">
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                     <div class="table--media-body">
                                         <h5 class="title m-0">
                                             {{$customer['f_name']." ".$customer['l_name']}}

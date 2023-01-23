@@ -665,8 +665,16 @@
                                 </div>
                                 <center>
                                     <img id="viewer" class="mt-4 border rounded mw-100 p-2"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                                         onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'"
+                                         src="{{asset('storage/restaurant/'.$logo)}}" alt="logo image"/>
+=======
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                          onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'"
                                          src="{{asset('storage/app/public/restaurant/'.$logo)}}" alt="logo image"/>
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                                 </center>
                             </div>
 

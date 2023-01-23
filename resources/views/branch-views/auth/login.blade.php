@@ -31,7 +31,15 @@
 
         <div class="auth-wrapper-left">
             <div class="auth-left-cont">
+<<<<<<< HEAD
                 <img onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'" src="{{asset('storage/app/public/restaurant')}}/{{\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value}}" alt="public/img">
+=======
+<<<<<<< HEAD
+                <img onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'" src="{{asset('storage/restaurant')}}/{{\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value}}" alt="public/img">
+=======
+                <img onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'" src="{{asset('storage/app/public/restaurant')}}/{{\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value}}" alt="public/img">
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                 <h2 class="title">{{translate('Your')}} <span class="d-block">{{translate('All Fresh Food')}}</span> <strong class="text--039D55">{{translate('in one Place')}}....</strong></h2>
             </div>
         </div>
@@ -46,7 +54,15 @@
                     <div class="auth-header">
                         <div class="mb-5">
                             <div class="auth-wrapper-right-logo">
+<<<<<<< HEAD
                                 <img onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'" src="{{asset('storage/app/public/restaurant')}}/{{\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value}}" alt="public/img">
+=======
+<<<<<<< HEAD
+                                <img onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'" src="{{asset('storage/restaurant')}}/{{\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value}}" alt="public/img">
+=======
+                                <img onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'" src="{{asset('storage/app/public/restaurant')}}/{{\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value}}" alt="public/img">
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                             </div>
                             <h2 class="title">{{translate('sign in')}}</h2>
                             <div>{{translate('welcome_back')}}</div>

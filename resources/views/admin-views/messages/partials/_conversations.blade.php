@@ -2,8 +2,18 @@
     <!-- Header -->
     <div class="card-header m-2 rounded-0">
         <div class="conv-open-user w-100">
+<<<<<<< HEAD
             <img class="avatar-img" src="{{asset('storage/app/public/profile/'.$user['image'])}}"
                  onerror="this.src='{{asset('assets/admin')}}/img/160x160/img1.jpg'"
+=======
+<<<<<<< HEAD
+            <img class="avatar-img" src="{{asset('storage/profile/'.$user['image'])}}"
+                 onerror="this.src='{{asset('public/assets/admin')}}/img/160x160/img1.jpg'"
+=======
+            <img class="avatar-img" src="{{asset('storage/app/public/profile/'.$user['image'])}}"
+                 onerror="this.src='{{asset('assets/admin')}}/img/160x160/img1.jpg'"
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                  alt="Image Description">
             <div class="info">
                 <h6 class="subtitle">{{$user['f_name'].' '.$user['l_name']}}</h6>
@@ -55,8 +65,8 @@
                                     @foreach($image_array as $key=>$image)
                                         @php($image_url = $image)
                                         <div>
-                                            <a href="{{asset('storage/app/public/conversation')}}/{{$image}}" data-lightbox >
-                                                <img class="__img-120" src="{{asset('storage/app/public/conversation')}}/{{$image}}" /></a>
+                                            <a href="{{asset('storage/conversation')}}/{{$image}}" data-lightbox >
+                                                <img class="__img-120" src="{{asset('storage/conversation')}}/{{$image}}" /></a>
                                         </div>
                                     @endforeach
                                 </div>

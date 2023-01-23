@@ -31,8 +31,18 @@
                                 <div class="d-flex flex-wrap align-items-center food--media justify-content-center">
                                 @if (!empty(json_decode($product['image'],true)))
                                     <img class="avatar avatar-xxl avatar-4by3 mr-4"
+<<<<<<< HEAD
                                         src="{{asset('storage/app/public/product')}}/{{json_decode($product['image'],true)[0]}}"
                                         onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'"
+=======
+<<<<<<< HEAD
+                                        src="{{asset('storage/product')}}/{{json_decode($product['image'],true)[0]}}"
+                                        onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'"
+=======
+                                        src="{{asset('storage/app/public/product')}}/{{json_decode($product['image'],true)[0]}}"
+                                        onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'"
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                         alt="Image Description">
                                 @else
                                     <img
@@ -150,7 +160,15 @@
                     <div class="card-body d-flex flex-column justify-content-center">
                                 @if($product->store)
                         <a class="resturant&#45;&#45;information-single" href="{{route('admin.vendor.view', $product->store_id)}}">
+<<<<<<< HEAD
                             <img class="img&#45;&#45;120 rounded mx-auto mb-3" onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/app/public/store/'.$product->store->logo)}}" alt="Image Description">
+=======
+<<<<<<< HEAD
+                            <img class="img&#45;&#45;120 rounded mx-auto mb-3" onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/store/'.$product->store->logo)}}" alt="Image Description">
+=======
+                            <img class="img&#45;&#45;120 rounded mx-auto mb-3" onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/app/public/store/'.$product->store->logo)}}" alt="Image Description">
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                             <div class="text-center">
                                 <h5 class="text-capitalize text&#45;&#45;title font-semibold text-hover-primary d-block mb-1">
                                     {{$product->store['name']}}
@@ -256,8 +274,16 @@
                                         href="{{route('admin.customer.view',[$review['user_id']])}}">
                                             <div class="avatar avatar-circle">
                                                 <img class="avatar-img" width="75" height="75"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                                                    onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                                    src="{{asset('storage/profile/'.$review->customer->image)}}"
+=======
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                                     onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
                                                     src="{{asset('storage/app/public/profile/'.$review->customer->image)}}"
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                                                     alt="Image Description">
                                             </div>
                                             <div class="ml-3">

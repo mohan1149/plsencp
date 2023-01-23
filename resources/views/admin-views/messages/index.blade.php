@@ -26,8 +26,18 @@
                     <!-- Body -->
                     <div class="card-header border-0 px-0 mx-20px">
                         <div class="conv-open-user w-100">
+<<<<<<< HEAD
                             <img class="w-47px" src="{{asset('storage/app/public/admin')}}/{{auth('admin')->user()->image}}"
                                  onerror="this.src='{{asset('assets/admin')}}/img/160x160/img1.jpg'"
+=======
+<<<<<<< HEAD
+                            <img class="w-47px" src="{{asset('storage/admin')}}/{{auth('admin')->user()->image}}"
+                                 onerror="this.src='{{asset('public/assets/admin')}}/img/160x160/img1.jpg'"
+=======
+                            <img class="w-47px" src="{{asset('storage/app/public/admin')}}/{{auth('admin')->user()->image}}"
+                                 onerror="this.src='{{asset('assets/admin')}}/img/160x160/img1.jpg'"
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                     alt="Image Description">
                             <div class="info">
                                 <h6 class="subtitle mb-0">{{auth('admin')->user()->f_name}} {{auth('admin')->user()->l_name}}</h6>
@@ -55,8 +65,18 @@
                                             onclick="viewConvs('{{route('admin.message.view',[$conv->user_id])}}','customer-{{$conv->user_id}}')"
                                             id="customer-{{$conv->user_id}}">
                                             <div class="conv-open-user w-100">
+<<<<<<< HEAD
                                                 <img class="w-47px" src="{{asset('storage/app/public/profile/'.$user['image'])}}"
                                                 onerror="this.src='{{asset('assets/admin')}}/img/160x160/img1.jpg'"
+=======
+<<<<<<< HEAD
+                                                <img class="w-47px" src="{{asset('storage/profile/'.$user['image'])}}"
+                                                onerror="this.src='{{asset('public/assets/admin')}}/img/160x160/img1.jpg'"
+=======
+                                                <img class="w-47px" src="{{asset('storage/app/public/profile/'.$user['image'])}}"
+                                                onerror="this.src='{{asset('assets/admin')}}/img/160x160/img1.jpg'"
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                                 alt="Image Description">
                                                 <span class="status active"></span>
                                                 <div class="info">

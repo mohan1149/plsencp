@@ -225,7 +225,7 @@ class Helpers
             "content-type: application/json"
         );
 
-        $image = asset('storage/app/public/notification') . '/' . $data['image'];
+        $image = asset('storage/notification') . '/' . $data['image'];
         $postdata = '{
             "to" : "/topics/grofresh",
             "mutable-content": "true",

@@ -86,8 +86,16 @@
                             <td class="text-capitalize">
                                 <div class="table--media">
                                     <img class="rounded-full"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                                         onerror="this.src='{{asset('/public/assets/admin/img/admin.png')}}'"
+                                         src="{{asset('storage/admin')}}/{{$e['image']}}" alt="img">
+=======
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                          onerror="this.src='{{asset('/assets/admin/img/admin.png')}}'"
                                          src="{{asset('storage/app/public/admin')}}/{{$e['image']}}" alt="img">
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                                     <div class="table--media-body">
                                         <h5 class="title">
                                             {{$e['f_name']}}

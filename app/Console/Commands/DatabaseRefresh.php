@@ -46,7 +46,7 @@ class DatabaseRefresh extends Command
         Artisan::call('db:wipe', ['--force' => true]);
         $sql_path = base_path('installation/database.sql');
         DB::unprepared(file_get_contents($sql_path));
-        File::deleteDirectory('storage/app/public');
+        File::deleteDirectory('storage/');
         Madzipper::make('installation/public.zip')->extractTo('storage/app');
     }
 }

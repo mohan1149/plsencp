@@ -128,8 +128,18 @@
                                 </td>
                                 <td>
                                     <a href="{{route('admin.product.view',[$product['id']])}}" target="_blank" class="product-list-media">
+<<<<<<< HEAD
                                         <img src="{{asset('storage/app/public/product')}}/{{$product_image}}"
                                              onerror="this.src='{{asset('/assets/admin/img/160x160/2.png')}}'"
+=======
+<<<<<<< HEAD
+                                        <img src="{{asset('storage/product')}}/{{$product_image}}"
+                                             onerror="this.src='{{asset('/public/assets/admin/img/160x160/2.png')}}'"
+=======
+                                        <img src="{{asset('storage/app/public/product')}}/{{$product_image}}"
+                                             onerror="this.src='{{asset('/assets/admin/img/160x160/2.png')}}'"
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                         />
                                         <h6 class="name line--limit-2">
                                             {{$product['name']}}

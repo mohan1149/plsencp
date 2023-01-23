@@ -18,8 +18,16 @@
                         <label class="label_1">{{ translate('Orders') }} : {{$item['count']}}</label>
                         <center class="mt-6">
                             <img style="border-radius: 50%;width: 60px;height: 60px;border:2px solid #80808082;"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                                 onerror="this.src='{{asset('public/assets/back-end/img/160x160/img1.jpg')}}'"
+                                 src="{{asset('storage/shop/'.$shop->image  ?? '' )}}">
+=======
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                  onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}'"
                                  src="{{asset('storage/app/public/shop/'.$shop->image  ?? '' )}}">
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                         </center>
                         <div class="text-center mt-2">
                             <span style="font-size: 10px">{{$shop['name']??'Not exist'}}</span>

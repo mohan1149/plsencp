@@ -109,8 +109,16 @@
                     <div class="col-md-6">
                         <div class="d-flex align-items-center justify-content-center">
                             <img class="avatar avatar-xxl avatar-4by3 mr-4 mw-120px initial-22"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                                 onerror="this.src='{{asset('public/assets/admin/img/admin.png')}}'"
+                                 src="{{asset('storage/delivery-man')}}/{{$dm['image']}}"
+=======
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                  onerror="this.src='{{asset('assets/admin/img/admin.png')}}'"
                                  src="{{asset('storage/app/public/delivery-man')}}/{{$dm['image']}}"
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                                  alt="Image Description">
                             <div class="d-block">
                                 <div class="rating--review">
@@ -320,8 +328,16 @@
                                        href="{{route('admin.customer.view',[$review['user_id']])}}">
                                         <div class="avatar avatar-circle">
                                             <img class="avatar-img" width="75" height="75"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                                                 onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                                 src="{{asset('storage/profile/'.$review->customer->image)}}"
+=======
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                                  onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
                                                  src="{{asset('storage/app/public/profile/'.$review->customer->image)}}"
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                                                  alt="Image Description">
                                         </div>
                                         <div class="ml-3">

@@ -131,8 +131,18 @@
                                 <tr>
                                     <td class="text-center">{{$categories->firstItem()+$key}}</td>
                                     <td>
+<<<<<<< HEAD
                                         <img src="{{asset('storage/app/public/category')}}/{{$category['image']}}"
                                             onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'" class="img--50 ml-3" alt="">
+=======
+<<<<<<< HEAD
+                                        <img src="{{asset('storage/category')}}/{{$category['image']}}"
+                                            onerror="this.src='{{asset('public/assets/admin/img/400x400/img2.jpg')}}'" class="img--50 ml-3" alt="">
+=======
+                                        <img src="{{asset('storage/app/public/category')}}/{{$category['image']}}"
+                                            onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'" class="img--50 ml-3" alt="">
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                     </td>
                                     <td>
                                     <span class="d-block font-size-sm text-body text-trim-50">

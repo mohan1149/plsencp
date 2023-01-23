@@ -64,8 +64,16 @@
                                     @if($review->product)
                                         @if (!empty(json_decode($review->product['image'],true)))
                                         <a href="{{route('admin.product.view',[$review['product_id']])}}" class="short-media">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                                            <img onerror="this.src='{{asset('public/assets/admin/img/160x160/1.png')}}'"
+                                                 src="{{asset('storage/product')}}//{{json_decode($review->product['image'],true)[0]}}">
+=======
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                             <img onerror="this.src='{{asset('assets/admin/img/160x160/1.png')}}'"
                                                  src="{{asset('storage/app/public/product')}}//{{json_decode($review->product['image'],true)[0]}}">
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                                             <div class="text-cont line--limit-2 max-150px">
                                                 {{$review->product['name']}}
                                             </div>

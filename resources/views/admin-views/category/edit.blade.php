@@ -82,8 +82,16 @@
                         @if($category->parent_id == 0)
                         <div class="col-sm-6">
                             <center>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                                <img class="img--105" id="viewer" onerror="this.src='{{asset('public/assets/admin/img/900x400/img1.jpg')}}'"
+                                    src="{{asset('storage/category')}}/{{$category['image']}}" alt="image"/>
+=======
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                 <img class="img--105" id="viewer" onerror="this.src='{{asset('assets/admin/img/900x400/img1.jpg')}}'"
                                     src="{{asset('storage/app/public/category')}}/{{$category['image']}}" alt="image"/>
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                             </center>
                             <label>{{\App\CentralLogics\translate('image')}}</label><small style="color: red">* ( {{\App\CentralLogics\translate('ratio')}} 3:1 )</small>
                             <div class="custom-file">

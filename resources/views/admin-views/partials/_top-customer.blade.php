@@ -12,8 +12,18 @@
         @foreach($top_customer as $key=>$item)
             @if(isset($item->customer))
                 <a class="grid--card" href="{{route('admin.customer.view',[$item['user_id']])}}">
+<<<<<<< HEAD
                 <img src="{{asset('storage/app/public/profile/'.$item->customer->image  ?? '' )}}"
                         onerror="this.src='{{asset('assets/admin/img/admin.jpg')}}'"
+=======
+<<<<<<< HEAD
+                <img src="{{asset('storage/profile/'.$item->customer->image  ?? '' )}}"
+                        onerror="this.src='{{asset('public/assets/admin/img/admin.jpg')}}'"
+=======
+                <img src="{{asset('storage/app/public/profile/'.$item->customer->image  ?? '' )}}"
+                        onerror="this.src='{{asset('assets/admin/img/admin.jpg')}}'"
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                         alt="{{$item->customer->name}} image">
                 <div class="cont pt-2">
                     <h6>{{$item->customer['f_name']??'Not exist'}}</h6>

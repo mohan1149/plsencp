@@ -99,7 +99,15 @@
                                     &nbsp;
                                 </label>
                                 <center class="mb-4">
+<<<<<<< HEAD
                                     <img class="initial-24" id="viewer" onerror="this.src='{{asset('assets/admin/img/upload-vertical.png')}}'" src="{{asset('storage/app/public/delivery-man').'/'.$delivery_man['image']}}" alt="Deliveryman thumbnail"/>
+=======
+<<<<<<< HEAD
+                                    <img class="initial-24" id="viewer" onerror="this.src='{{asset('public/assets/admin/img/upload-vertical.png')}}'" src="{{asset('storage/delivery-man').'/'.$delivery_man['image']}}" alt="Deliveryman thumbnail"/>
+=======
+                                    <img class="initial-24" id="viewer" onerror="this.src='{{asset('assets/admin/img/upload-vertical.png')}}'" src="{{asset('storage/app/public/delivery-man').'/'.$delivery_man['image']}}" alt="Deliveryman thumbnail"/>
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                 </center>
                                 <div class="form-group mb-0">
                                     <label class="form-label d-block">{{translate('deliveryman')}} {{translate('image')}} <small class="text-danger">* ( {{translate('ratio')}} 1:1 )</small></label>
@@ -118,7 +126,15 @@
                                         @foreach(json_decode($delivery_man['identity_image'],true) as $img)
                                             <div class="two__item w-50">
                                                 <div class="max-h-140px existing-item">
+<<<<<<< HEAD
                                                     <img onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/app/public/delivery-man').'/'.$img}}">
+=======
+<<<<<<< HEAD
+                                                    <img onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/delivery-man').'/'.$img}}">
+=======
+                                                    <img onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/app/public/delivery-man').'/'.$img}}">
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                                 </div>
                                             </div>
                                         @endforeach

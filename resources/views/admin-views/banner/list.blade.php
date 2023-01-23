@@ -62,7 +62,15 @@
                             <td>{{$key+1}}</td>
                             <td>
                                 <div>
+<<<<<<< HEAD
                                     <img class="img-vertical-150" src="{{asset('storage/app/public/banner')}}/{{$banner['image']}}" onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'">
+=======
+<<<<<<< HEAD
+                                    <img class="img-vertical-150" src="{{asset('storage/banner')}}/{{$banner['image']}}" onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'">
+=======
+                                    <img class="img-vertical-150" src="{{asset('storage/app/public/banner')}}/{{$banner['image']}}" onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'">
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                 </div>
                             </td>
                             <td>

@@ -81,8 +81,16 @@
                             </label>
                             <center class="mb-4">
                                 <img class="initial-24" id="viewer"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                                onerror="this.src='{{asset('public/assets/admin/img/upload-vertical.png')}}'"
+                                src="{{asset('storage/admin')}}/{{$e['image']}}" alt="Employee thumbnail"/>
+=======
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                 onerror="this.src='{{asset('assets/admin/img/upload-vertical.png')}}'"
                                 src="{{asset('storage/app/public/admin')}}/{{$e['image']}}" alt="Employee thumbnail"/>
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                             </center>
                             <div class="form-group mb-0">
                                 <label class="form-label d-block">
@@ -103,7 +111,15 @@
                                         @foreach(json_decode($e['identity_image'],true) as $img)
                                             <div class="two__item w-50">
                                                 <div class="max-h-140px existing-item">
+<<<<<<< HEAD
                                                     <img onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/app/public/admin').'/'.$img}}">
+=======
+<<<<<<< HEAD
+                                                    <img onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/admin').'/'.$img}}">
+=======
+                                                    <img onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/app/public/admin').'/'.$img}}">
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                                 </div>
                                             </div>
                                         @endforeach

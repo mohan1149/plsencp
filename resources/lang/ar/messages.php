@@ -1582,5 +1582,9 @@
   'Want to login your admin account ' => 'تريد تسجيل الدخول إلى حساب المسؤول الخاص بك',
   'discount in' => 'خصم في',
   '7+ character' => '7+ شخصية',
+<<<<<<< HEAD
   'Admin password updated successfully!' => 'Admin password updated successfully!',
 );
+=======
+);
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794

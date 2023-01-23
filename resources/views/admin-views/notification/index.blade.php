@@ -101,7 +101,15 @@
                                     <td>{{$notifications->firstItem()+$key}}</td>
                                     <td>
                                         @if($notification['image']!=null)
+<<<<<<< HEAD
                                             <img class="img-vertical-150" onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'" src="{{asset('storage/app/public/notification')}}/{{$notification['image']}}">
+=======
+<<<<<<< HEAD
+                                            <img class="img-vertical-150" onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'" src="{{asset('storage/notification')}}/{{$notification['image']}}">
+=======
+                                            <img class="img-vertical-150" onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'" src="{{asset('storage/app/public/notification')}}/{{$notification['image']}}">
+>>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
+>>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                         @else
                                             <label class="badge badge-soft-warning">No {{translate('image')}}</label>
                                         @endif
