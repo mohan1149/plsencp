@@ -13,7 +13,7 @@
             <div class="media align-items-center mb-2">
                 <!-- Avatar -->
                 <div class="avatar avatar-lg mr-3">
-                    <img class="avatar-img" src="{{asset('assets/admin')}}/svg/illustrations/order.png"
+                    <img class="avatar-img" src="{{asset('public/assets/admin')}}/svg/illustrations/order.png"
                          alt="Image Description">
                 </div>
                 <!-- End Avatar -->
@@ -579,10 +579,10 @@
 
 @push('script_2')
 
-    <script src="{{asset('assets/admin')}}/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="{{asset('public/assets/admin')}}/vendor/chart.js/dist/Chart.min.js"></script>
     <script
-        src="{{asset('assets/admin')}}/vendor/chartjs-chart-matrix/dist/chartjs-chart-matrix.min.js"></script>
-    <script src="{{asset('assets/admin')}}/js/hs.chartjs-matrix.js"></script>
+        src="{{asset('public/assets/admin')}}/vendor/chartjs-chart-matrix/dist/chartjs-chart-matrix.min.js"></script>
+    <script src="{{asset('public/assets/admin')}}/js/hs.chartjs-matrix.js"></script>
 
     <script>
         $(document).on('ready', function () {

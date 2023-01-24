@@ -18,7 +18,7 @@
                 <div class="card-body">
                     <div class="btn--container justify-content-between align-items-center mb-2 pb-1">
                         <h5 class="card-title mb-2">
-                            <img src="{{asset('/assets/admin/img/business-analytics.png')}}" alt=""
+                            <img src="{{asset('/public/assets/admin/img/business-analytics.png')}}" alt=""
                                  class="card-icon"> Business Analytics
                         </h5>
                         <div class="mb-2">
@@ -158,7 +158,7 @@
                             <div class="card-body p-20px pb-0">
                                 <div class="btn--container justify-content-between align-items-center">
                                     <h5 class="card-title mb-2">
-                                        <img src="{{asset('/assets/admin/img/order-statistics.png')}}" alt=""
+                                        <img src="{{asset('/public/assets/admin/img/order-statistics.png')}}" alt=""
                                              class="card-icon">
                                         <span>{{translate('order_statistics')}}</span>
                                     </h5>
@@ -237,7 +237,7 @@
                             <div class="card-body p-20px pb-0">
                                 <div class="btn--container justify-content-between align-items-center">
                                     <h5 class="card-title mb-2">
-                                        <img src="{{asset('/assets/admin/img/order-statistics.png')}}" alt=""
+                                        <img src="{{asset('/public/assets/admin/img/order-statistics.png')}}" alt=""
                                              class="card-icon">
                                         <span>{{translate('earning_statistics')}}</span>
                                     </h5>
@@ -348,14 +348,14 @@
             @endsection
 
             @push('script')
-                <script src="{{asset('assets/admin')}}/vendor/chart.js/dist/Chart.min.js"></script>
+                <script src="{{asset('public/assets/admin')}}/vendor/chart.js/dist/Chart.min.js"></script>
                 <script
-                    src="{{asset('assets/admin')}}/vendor/chart.js.extensions/chartjs-extensions.js"></script>
+                    src="{{asset('public/assets/admin')}}/vendor/chart.js.extensions/chartjs-extensions.js"></script>
                 <script
-                    src="{{asset('assets/admin')}}/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"></script>
+                    src="{{asset('public/assets/admin')}}/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"></script>
 
                 <!-- Apex Charts -->
-                <script src="{{asset('/assets/admin/js/apex-charts/apexcharts.js')}}"></script>
+                <script src="{{asset('/public/assets/admin/js/apex-charts/apexcharts.js')}}"></script>
                 <!-- Apex Charts -->
             @endpush
 

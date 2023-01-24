@@ -8,7 +8,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('assets/admin/img/products.png')}}" class="w--24" alt="">
+                    <img src="{{asset('public/assets/admin/img/products.png')}}" class="w--24" alt="">
                 </span>
                 <span>
                     {{ translate('Limited Stocks') }}
@@ -63,20 +63,10 @@
                                         <a href="{{route('admin.product.view',[$product['id']])}}" class="product-list-media">
                                             @if (!empty(json_decode($product['image'],true)))
                                                 <img
-<<<<<<< HEAD
-                                                    src="{{asset('storage/app/public/product')}}/{{json_decode($product['image'],true)[0]}}"
-                                                    onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'">
-=======
-<<<<<<< HEAD
                                                     src="{{asset('storage/product')}}/{{json_decode($product['image'],true)[0]}}"
                                                     onerror="this.src='{{asset('public/assets/admin/img/400x400/img2.jpg')}}'">
-=======
-                                                    src="{{asset('storage/app/public/product')}}/{{json_decode($product['image'],true)[0]}}"
-                                                    onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'">
->>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
->>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                             @else
-                                                <img src="{{asset('assets/admin/img/400x400/img2.jpg')}}">
+                                                <img src="{{asset('public/assets/admin/img/400x400/img2.jpg')}}">
                                             @endif
                                             <h6 class="name line--limit-2">
                                                 {{\Illuminate\Support\Str::limit($product['name'], 20, $end='...')}}
@@ -142,7 +132,7 @@
                         </div>
                         @if(count($products)==0)
                             <div class="text-center p-4">
-                                <img class="w-120px mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
+                                <img class="w-120px mb-3" src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
                                 <p class="mb-0">{{translate('No_data_to_show')}}</p>
                             </div>
                         @endif

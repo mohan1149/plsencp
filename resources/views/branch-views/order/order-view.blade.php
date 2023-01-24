@@ -12,7 +12,7 @@
         <div class="page-header d-flex justify-content-between">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('assets/admin/img/order.png')}}" class="w--20" alt="">
+                    <img src="{{asset('public/assets/admin/img/order.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{translate('orders details')}}
@@ -187,22 +187,12 @@
                                                     <div class="avatar avatar-xl mr-3">
                                                         @if($detail->product && $detail->product['image'] != null )
                                                             <img class="img-fluid rounded aspect-ratio-1"
-<<<<<<< HEAD
-                                                                 src="{{asset('storage/app/public/product')}}/{{json_decode($detail->product['image'],true)[0]?? ''}}"
-                                                                 onerror="this.src='{{asset('assets/admin/img/160x160/2.png')}}'"
-=======
-<<<<<<< HEAD
                                                                  src="{{asset('storage/product')}}/{{json_decode($detail->product['image'],true)[0]?? ''}}"
                                                                  onerror="this.src='{{asset('public/assets/admin/img/160x160/2.png')}}'"
-=======
-                                                                 src="{{asset('storage/app/public/product')}}/{{json_decode($detail->product['image'],true)[0]?? ''}}"
-                                                                 onerror="this.src='{{asset('assets/admin/img/160x160/2.png')}}'"
->>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
->>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                                                  alt="Image Description">
                                                         @else
                                                             <img
-                                                                src="{{asset('assets/admin/img/160x160/2.png')}}"
+                                                                src="{{asset('public/assets/admin/img/160x160/2.png')}}"
                                                                 class="img-fluid rounded aspect-ratio-1"
                                                             >
                                                         @endif
@@ -462,16 +452,8 @@
 
                                             <div class="avatar avatar-circle">
                                                 <img class="avatar-img"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
                                                      onerror="this.src='{{ asset('public/assets/admin/img/160x160/img1.jpg') }}'"
                                                      src="{{ asset('storage/delivery-man/' . $order->delivery_man->image) }}"
-=======
->>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
-                                                     onerror="this.src='{{ asset('assets/admin/img/160x160/img1.jpg') }}'"
-                                                     src="{{ asset('storage/app/public/delivery-man/' . $order->delivery_man->image) }}"
->>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                                                      alt="Image Description">
                                             </div>
                                             <div class="media-body">
@@ -564,7 +546,7 @@
                         @if($order->user_id == null)
                             <div class="media align-items-center deco-none customer--information-single">
                                 <div class="avatar avatar-circle">
-                                    <img class="avatar-img" src="{{asset('assets/admin/img/admin.jpg')}}" alt="Image Description">
+                                    <img class="avatar-img" src="{{asset('public/assets/admin/img/admin.jpg')}}" alt="Image Description">
                                 </div>
                                 <div class="media-body">
                                     <span class="fz--14px text--title font-semibold text-hover-primary d-block">
@@ -575,7 +557,7 @@
                                 @if($order->user_id != null && !isset($order->customer) )
                                     <div class="media align-items-center deco-none customer--information-single">
                                         <div class="avatar avatar-circle">
-                                            <img class="avatar-img" src="{{asset('assets/admin/img/admin.jpg')}}" alt="Image Description">
+                                            <img class="avatar-img" src="{{asset('public/assets/admin/img/admin.jpg')}}" alt="Image Description">
                                         </div>
                                         <div class="media-body">
                                             <span class="fz--14px text--title font-semibold text-hover-primary d-block">
@@ -586,15 +568,7 @@
                                         @if(isset($order->customer) )
                                             <div class="media align-items-center deco-none customer--information-single">
                                                 <div class="avatar avatar-circle">
-<<<<<<< HEAD
-                                                    <img class="avatar-img" onerror="this.src='{{asset('assets/admin/img/admin.jpg')}}'" src="{{asset('storage/app/public/profile/'.$order->customer->image)}}" alt="Image Description">
-=======
-<<<<<<< HEAD
                                                     <img class="avatar-img" onerror="this.src='{{asset('public/assets/admin/img/admin.jpg')}}'" src="{{asset('storage/profile/'.$order->customer->image)}}" alt="Image Description">
-=======
-                                                    <img class="avatar-img" onerror="this.src='{{asset('assets/admin/img/admin.jpg')}}'" src="{{asset('storage/app/public/profile/'.$order->customer->image)}}" alt="Image Description">
->>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
->>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                                 </div>
                                                 <div class="media-body">
                                     <span class="fz--14px text--title font-semibold text-hover-primary d-block">
@@ -629,15 +603,7 @@
                                     </h5>
                                     <div class="media align-items-center deco-none resturant--information-single">
                                         <div class="avatar avatar-circle">
-<<<<<<< HEAD
-                                            <img class="avatar-img w-75px" onerror="this.src='{{asset("assets/admin/img/100x100/1.png")}}'" src="{{asset('storage/app/public/branch/'.$order->branch->image)}}" alt="Image Description">
-=======
-<<<<<<< HEAD
                                             <img class="avatar-img w-75px" onerror="this.src='{{asset("public/assets/admin/img/100x100/1.png")}}'" src="{{asset('storage/branch/'.$order->branch->image)}}" alt="Image Description">
-=======
-                                            <img class="avatar-img w-75px" onerror="this.src='{{asset("assets/admin/img/100x100/1.png")}}'" src="{{asset('storage/app/public/branch/'.$order->branch->image)}}" alt="Image Description">
->>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
->>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                         </div>
                                         <div class="media-body">
                             <span class="fz--14px text--title font-semibold text-hover-primary d-block">
@@ -847,16 +813,8 @@
                                     <li class="list-group-item">
                                         <span class="dm_list" role='button' data-id="{{ $dm['id'] }}">
                                             <img class="avatar avatar-sm avatar-circle mr-1"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
                                                  onerror="this.src='{{ asset('public/assets/admin/img/160x160/img1.jpg') }}'"
                                                  src="{{ asset('storage/delivery-man') }}/{{ $dm['image'] }}"
-=======
->>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
-                                                 onerror="this.src='{{ asset('assets/admin/img/160x160/img1.jpg') }}'"
-                                                 src="{{ asset('storage/app/public/delivery-man') }}/{{ $dm['image'] }}"
->>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                                                  alt="{{ $dm['f_name'] }}">
                                             {{ $dm['f_name'] }} {{ $dm['l_name'] }}
                                         </span>

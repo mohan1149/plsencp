@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('assets/admin/img/notification.png')}}" class="w--20" alt="">
+                    <img src="{{asset('public/assets/admin/img/notification.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{translate('Send Push Notification')}}
@@ -45,7 +45,7 @@
                                         </h5>
                                         <label class="upload--vertical mt-auto">
                                             <input type="file" name="image" id="customFileEg1" class="" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" hidden>
-                                            <img id="viewer" src="{{asset('assets/admin/img/upload-vertical.png')}}" alt="notification image"/>
+                                            <img id="viewer" src="{{asset('public/assets/admin/img/upload-vertical.png')}}" alt="notification image"/>
                                         </label>
                                     </div>
                                 </div>
@@ -101,15 +101,7 @@
                                     <td>{{$notifications->firstItem()+$key}}</td>
                                     <td>
                                         @if($notification['image']!=null)
-<<<<<<< HEAD
-                                            <img class="img-vertical-150" onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'" src="{{asset('storage/app/public/notification')}}/{{$notification['image']}}">
-=======
-<<<<<<< HEAD
                                             <img class="img-vertical-150" onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'" src="{{asset('storage/notification')}}/{{$notification['image']}}">
-=======
-                                            <img class="img-vertical-150" onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'" src="{{asset('storage/app/public/notification')}}/{{$notification['image']}}">
->>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
->>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                                         @else
                                             <label class="badge badge-soft-warning">No {{translate('image')}}</label>
                                         @endif
@@ -166,7 +158,7 @@
                         </table>
                         @if(count($notifications)==0)
                             <div class="text-center p-4">
-                                <img class="mb-3" src="{{asset('assets/admin')}}/svg/illustrations/sorry.svg" alt="Image Description" style="width: 7rem;">
+                                <img class="mb-3" src="{{asset('public/assets/admin')}}/svg/illustrations/sorry.svg" alt="Image Description" style="width: 7rem;">
                                 <p class="mb-0">{{ translate('No_data_to_show')}}</p>
                             </div>
                         @endif

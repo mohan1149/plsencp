@@ -31,7 +31,7 @@
 
         <div class="auth-wrapper-left">
             <div class="auth-left-cont">
-                <img onerror="this.src='<?php echo e(asset('assets/admin/img/160x160/img2.jpg')); ?>'" src="<?php echo e(asset('storage/app/public/restaurant')); ?>/<?php echo e(\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value); ?>" alt="public/img">
+                <img onerror="this.src='<?php echo e(asset('assets/admin/img/160x160/img2.jpg')); ?>'" src="<?php echo e(asset('storage/restaurant')); ?>/<?php echo e(\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value); ?>" alt="public/img">
                 <h2 class="title"><?php echo e(translate('Your')); ?> <span class="d-block"><?php echo e(translate('All Fresh Food')); ?></span> <strong class="text--039D55"><?php echo e(translate('in one Place')); ?>....</strong></h2>
             </div>
         </div>
@@ -46,7 +46,7 @@
                     <div class="auth-header">
                         <div class="mb-5">
                             <div class="auth-wrapper-right-logo">
-                                <img onerror="this.src='<?php echo e(asset('assets/admin/img/160x160/img2.jpg')); ?>'" src="<?php echo e(asset('storage/app/public/restaurant')); ?>/<?php echo e(\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value); ?>" alt="public/img">
+                                <img onerror="this.src='<?php echo e(asset('assets/admin/img/160x160/img2.jpg')); ?>'" src="<?php echo e(asset('storage/restaurant')); ?>/<?php echo e(\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value); ?>" alt="public/img">
                             </div>
                             <h2 class="title"><?php echo e(translate('sign in')); ?></h2>
                             <div><?php echo e(translate('welcome_back')); ?></div>

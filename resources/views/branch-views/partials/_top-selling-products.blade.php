@@ -11,21 +11,11 @@
             @if(isset($item->product))
                 <a class="grid--card" href="{{route('admin.product.view',[$item['product_id']])}}">
                     @if (!empty(json_decode($item->product->image,true)))
-<<<<<<< HEAD
-                        <img src="{{ asset('storage/app/public/product').'/'.json_decode($item->product->image)[0]  ?? '' }}"
-                             onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'"
-=======
-<<<<<<< HEAD
                         <img src="{{ asset('storage/product').'/'.json_decode($item->product->image)[0]  ?? '' }}"
                              onerror="this.src='{{asset('public/assets/admin/img/400x400/img2.jpg')}}'"
-=======
-                        <img src="{{ asset('storage/app/public/product').'/'.json_decode($item->product->image)[0]  ?? '' }}"
-                             onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'"
->>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
->>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
                              alt="{{$item->product->name}} image">
                     @else
-                        <img src="{{asset('assets/admin/img/160x160/img2.jpg')}}"
+                        <img src="{{asset('public/assets/admin/img/160x160/img2.jpg')}}"
                         >
                     @endif
                     <div class="cont pt-2">

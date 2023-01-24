@@ -22,7 +22,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('assets/admin/img/banner.png')}}" class="w--20" alt="">
+                    <img src="{{asset('public/assets/admin/img/banner.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{translate('add New Branch')}}
@@ -70,7 +70,7 @@
                                                 </div>
                                                 <label class="upload--squire">
                                                     <input type="file" name="image" id="customFileEg1" class="" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" required hidden>
-                                                    <img id="viewer" src="{{asset('assets/admin/img/upload-vertical.png')}}" alt="banner image"/>
+                                                    <img id="viewer" src="{{asset('public/assets/admin/img/upload-vertical.png')}}" alt="banner image"/>
                                                 </label>
                                             </div>
                                         </div>
@@ -127,7 +127,7 @@
                                                                for="latitude">{{ translate('latitude') }}<span
                                                                 class="form-label-secondary" data-toggle="tooltip" data-placement="right"
                                                                 data-original-title="{{ translate('click_on_the_map_select_your_defaul_location') }}"><img
-                                                                    src="{{ asset('/assets/admin/img/info-circle.svg') }}"
+                                                                    src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
                                                                     alt="{{ translate('click_on_the_map_select_your_defaul_location') }}"></span></label>
                                                         <input type="text" id="latitude" name="latitude" class="form-control"
                                                                placeholder="{{ translate('Ex:') }} 23.8118428"
@@ -140,7 +140,7 @@
                                                                for="longitude">{{ translate('longitude') }}<span
                                                                 class="form-label-secondary" data-toggle="tooltip" data-placement="right"
                                                                 data-original-title="{{ translate('click_on_the_map_select_your_defaul_location') }}"><img
-                                                                    src="{{ asset('/assets/admin/img/info-circle.svg') }}"
+                                                                    src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
                                                                     alt="{{ translate('click_on_the_map_select_your_defaul_location') }}"></span></label>
                                                         <input type="text" name="longitude" class="form-control"
                                                                placeholder="{{ translate('Ex:') }} 90.356331" id="longitude"

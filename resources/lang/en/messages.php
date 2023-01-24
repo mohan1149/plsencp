@@ -1582,6 +1582,4 @@
   'Want to login your admin account ' => 'Want to login your admin account ',
   'discount in' => 'Discount in',
   '7+ character' => '7+ character',
-  'Config Updated Successfully' => 'Config Updated Successfully',
-  'Admin password updated successfully!' => 'Admin password updated successfully!',
 );

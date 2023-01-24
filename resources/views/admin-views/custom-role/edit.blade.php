@@ -12,7 +12,7 @@
     <div class="page-header">
         <h1 class="page-header-title">
             <span class="page-header-icon">
-                <img src="{{asset('assets/admin/img/employee.png')}}" class="w--24" alt="mail">
+                <img src="{{asset('public/assets/admin/img/employee.png')}}" class="w--24" alt="mail">
             </span>
             <span>
                 {{translate('Employee Role Setup')}}

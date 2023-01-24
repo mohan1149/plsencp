@@ -36,7 +36,7 @@
                     <div class="card-header">
                         <h5 class="card-title d-flex align-items-center">
                             <span class="card-header-icon mb-1 mr-2">
-                                <img src="{{asset('assets/admin/img/bag.png')}}" class="w--17" alt="">
+                                <img src="{{asset('public/assets/admin/img/bag.png')}}" class="w--17" alt="">
                             </span>
                             <span>{{translate('Business Information')}}</span>
                         </h5>
@@ -586,7 +586,7 @@
                                             <span class="line--limit-1">
                                                 <strong>{{translate('self_pickup')}}</strong>
                                             </span>
-                                                <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('If this field is active')}}"><img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="info">
+                                                <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('If this field is active')}}"><img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="info">
                                                 </span>
                                             </span>
                                             <input type="checkbox" name="self_pickup" class="toggle-switch-input" {{ $sp == 1 ? 'checked' : '' }}>
@@ -609,7 +609,7 @@
                                             <span class="line--limit-1">
                                                 <strong>{{translate('email verification')}}</strong>
                                             </span>
-                                                <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('If this field is active, customer have to verify their email verication through an OTP')}}"><img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="info">
+                                                <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('If this field is active, customer have to verify their email verication through an OTP')}}"><img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="info">
                                                 </span>
                                             </span>
                                             <input type="checkbox" class="toggle-switch-input" name="email_verification" {{ $ev == 1 ? 'checked' : '' }}>
@@ -631,7 +631,7 @@
                                             <span class="line--limit-1">
                                                 <strong>{{translate('phone')}} {{translate('verification')}}</strong>
                                             </span>
-                                                <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('If this field is active, customer have to verify their phone number through an OTP')}}"><img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="info">
+                                                <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('If this field is active, customer have to verify their phone number through an OTP')}}"><img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="info">
                                                 </span>
                                             </span>
                                             <input type="checkbox" class="toggle-switch-input" name="phone_verification" {{ $pv == 1 ? 'checked' : '' }}>
@@ -665,16 +665,8 @@
                                 </div>
                                 <center>
                                     <img id="viewer" class="mt-4 border rounded mw-100 p-2"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
                                          onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'"
                                          src="{{asset('storage/restaurant/'.$logo)}}" alt="logo image"/>
-=======
->>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
-                                         onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'"
-                                         src="{{asset('storage/app/public/restaurant/'.$logo)}}" alt="logo image"/>
->>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                                 </center>
                             </div>
 

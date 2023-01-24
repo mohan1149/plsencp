@@ -12,7 +12,7 @@
     <div class="page-header">
         <h1 class="page-header-title">
             <span class="page-header-icon">
-                <img src="{{asset('assets/admin/img/employee.png')}}" class="w--24" alt="mail">
+                <img src="{{asset('public/assets/admin/img/employee.png')}}" class="w--24" alt="mail">
             </span>
             <span>
                 {{translate('Employee Role Setup')}}
@@ -101,7 +101,7 @@
                     <div id="usersExportDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-sm-right">
                         <span class="dropdown-header">{{translate('download')}} {{translate('options')}}</span>
                         <a id="export-excel" class="dropdown-item" href="{{route('admin.custom-role.export')}}">
-                            <img class="avatar avatar-xss avatar-4by3 mr-2" src="{{asset('assets/admin')}}/svg/components/excel.svg" alt="Image Description">
+                            <img class="avatar avatar-xss avatar-4by3 mr-2" src="{{asset('public/assets/admin')}}/svg/components/excel.svg" alt="Image Description">
                             {{translate('excel')}}
                         </a>
                     </div>
@@ -167,7 +167,7 @@
                 </table>
                 @if(count($rl) === 0)
                     <div class="text-center p-4">
-                        <img class="mb-3" src="{{asset('assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description" style="width: 7rem;">
+                        <img class="mb-3" src="{{asset('public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description" style="width: 7rem;">
                         <p class="mb-0">No data to show</p>
                     </div>
                 @endif

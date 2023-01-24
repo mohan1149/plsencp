@@ -10,7 +10,7 @@
                     <a class="navbar-brand" href="<?php echo e(route('admin.dashboard')); ?>" aria-label="Front">
                         <img class="w-100 side-logo"
                              onerror="this.src='<?php echo e(asset('assets/admin/img/160x160/img2.jpg')); ?>'"
-                             src="<?php echo e(asset('storage/app/public/restaurant/'.$restaurant_logo)); ?>"
+                             src="<?php echo e(asset('storage/restaurant/'.$restaurant_logo)); ?>"
                              alt="Logo">
                     </a>
 

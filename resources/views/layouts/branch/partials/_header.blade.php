@@ -51,16 +51,8 @@
                                     </div>
                                     <div class="avatar avatar-sm avatar-circle">
                                         <img class="avatar-img"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
                                             onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
                                              src="{{asset('storage/branch')}}/{{auth('branch')->user()->image}}"
-=======
->>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
-                                            onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
-                                             src="{{asset('storage/app/public/branch')}}/{{auth('branch')->user()->image}}"
->>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                                             alt="Image Description">
                                         <span class="avatar-status avatar-sm-status avatar-status-success"></span>
                                     </div>
@@ -74,16 +66,8 @@
                                     <div class="media align-items-center">
                                         <div class="avatar avatar-sm avatar-circle mr-2">
                                             <img class="avatar-img"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
                                                  onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
                                                  src="{{asset('storage/branch')}}/{{auth('branch')->user()->image}}"
-=======
->>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
-                                                 onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
-                                                 src="{{asset('storage/app/public/branch')}}/{{auth('branch')->user()->image}}"
->>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                                                  alt="Image Description">
                                         </div>
                                         <div class="media-body">

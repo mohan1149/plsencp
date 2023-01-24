@@ -11,7 +11,7 @@
             <?php if(isset($item->product)): ?>
             <a class="grid--card" href="<?php echo e(route('admin.product.view',[$item['product_id']])); ?>">
                 <?php if(!empty(json_decode($item->product->image,true))): ?>
-                <img src="<?php echo e(asset('storage/app/public/product').'/'.json_decode($item->product->image)[0]  ?? ''); ?>"
+                <img src="<?php echo e(asset('storage/product').'/'.json_decode($item->product->image)[0]  ?? ''); ?>"
                      onerror="this.src='<?php echo e(asset('assets/admin/img/400x400/img2.jpg')); ?>'"
                      alt="<?php echo e($item->product->name); ?> image">
                 <?php endif; ?>

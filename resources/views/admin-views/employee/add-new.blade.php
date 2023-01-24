@@ -3,7 +3,7 @@
 @section('title', translate('Add Employee'))
 
 @push('css_or_js')
-<link href="{{asset('assets/admin')}}/css/select2.min.css" rel="stylesheet"/>
+<link href="{{asset('public/assets/admin')}}/css/select2.min.css" rel="stylesheet"/>
 <meta name="csrf-token" content="{{ csrf_token() }}">
 @endpush
 
@@ -14,7 +14,7 @@
     <div class="page-header">
         <h1 class="page-header-title">
             <span class="page-header-icon">
-                <img src="{{asset('assets/admin/img/employee.png')}}" class="w--24" alt="mail">
+                <img src="{{asset('public/assets/admin/img/employee.png')}}" class="w--24" alt="mail">
             </span>
             <span>
                 {{translate('Add New Employee')}}
@@ -82,7 +82,7 @@
                             </label>
                             <center class="mb-4">
                                 <img class="initial-24" id="viewer"
-                                src="{{asset('assets/admin/img/upload-vertical.png')}}" alt="Employee thumbnail"/>
+                                src="{{asset('public/assets/admin/img/upload-vertical.png')}}" alt="Employee thumbnail"/>
                             </center>
                             <div class="form-group mb-0">
                                 <label class="form-label d-block ">
@@ -145,7 +145,7 @@
 @endsection
 
 @push('script_2')
-    <script src="{{asset('assets/admin/js/spartan-multi-image-picker.js')}}"></script>
+    <script src="{{asset('public/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
     <script type="text/javascript">
         $(function () {
             $("#coba").spartanMultiImagePicker({
@@ -155,7 +155,7 @@
                 groupClassName: 'two__item',
                 maxFileSize: '',
                 placeholderImage: {
-                    image: '{{asset('assets/admin/img/upload-vertical.png')}}',
+                    image: '{{asset('public/assets/admin/img/upload-vertical.png')}}',
                     width: '100%'
                 },
                 dropFileLabel: "Drop Here",
@@ -184,7 +184,7 @@
         });
     </script>
 
-    <script src="{{asset('assets/admin')}}/js/select2.min.js"></script>
+    <script src="{{asset('public/assets/admin')}}/js/select2.min.js"></script>
     <script>
         function readURL(input) {
             if (input.files && input.files[0]) {

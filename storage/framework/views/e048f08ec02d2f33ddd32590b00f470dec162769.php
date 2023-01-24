@@ -12,7 +12,7 @@
         <?php $__currentLoopData = $top_customer; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key=>$item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <?php if(isset($item->customer)): ?>
                 <a class="grid--card" href="<?php echo e(route('admin.customer.view',[$item['user_id']])); ?>">
-                <img src="<?php echo e(asset('storage/app/public/profile/'.$item->customer->image  ?? '' )); ?>"
+                <img src="<?php echo e(asset('storage/profile/'.$item->customer->image  ?? '' )); ?>"
                         onerror="this.src='<?php echo e(asset('assets/admin/img/admin.jpg')); ?>'"
                         alt="<?php echo e($item->customer->name); ?> image">
                 <div class="cont pt-2">

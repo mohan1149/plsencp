@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('assets/admin/img/employee.png')}}" class="w--24" alt="mail">
+                    <img src="{{asset('public/assets/admin/img/employee.png')}}" class="w--24" alt="mail">
                 </span>
                 <span>
                     {{translate('deliveryman')}} {{translate('list')}}
@@ -52,7 +52,7 @@
                         <div id="usersExportDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-sm-right">
                             <span class="dropdown-header">{{translate('download')}} {{translate('options')}}</span>
                             <a id="export-excel" class="dropdown-item" href="{{route('admin.delivery-man.export')}}">
-                                <img class="avatar avatar-xss avatar-4by3 mr-2" src="{{asset('assets/admin')}}/svg/components/excel.svg" alt="Image Description">
+                                <img class="avatar avatar-xss avatar-4by3 mr-2" src="{{asset('public/assets/admin')}}/svg/components/excel.svg" alt="Image Description">
                                 {{translate('excel')}}
                             </a>
                         </div>
@@ -83,16 +83,8 @@
                             <td>{{$delivery_men->firstItem()+$key}}</td>
                             <td>
                                 <div class="table--media">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
                                     <img class="rounded-full"  onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
                                          src="{{asset('storage/delivery-man')}}/{{$dm['image']}}" alt="img">
-=======
->>>>>>> 2cbe6baa85b1dcb6aeeab4536c7e05ed48084794
-                                    <img class="rounded-full"  onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
-                                         src="{{asset('storage/app/public/delivery-man')}}/{{$dm['image']}}" alt="img">
->>>>>>> beaaee64c0f936c7adcc316fa23d7d3c6f0980df
                                     <div class="table--media-body">
                                         <h5 class="title">
                                             {{$dm['f_name'] }} {{$dm['l_name'] }}
@@ -155,7 +147,7 @@
                 </div>
                 @if(count($delivery_men)==0)
                     <div class="text-center p-4">
-                        <img class="w-120px mb-3" src="{{asset('assets/admin')}}/svg/illustrations/sorry.svg" alt="Image Description">
+                        <img class="w-120px mb-3" src="{{asset('public/assets/admin')}}/svg/illustrations/sorry.svg" alt="Image Description">
                         <p class="mb-0">{{ translate('No_data_to_show')}}</p>
                     </div>
                 @endif
