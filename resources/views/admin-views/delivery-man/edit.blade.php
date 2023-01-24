@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/employee.png')}}" class="w--24" alt="mail">
+                    <img src="{{asset('assets/admin/img/employee.png')}}" class="w--24" alt="mail">
                 </span>
                 <span>
                     {{translate('update deliveryman')}}
@@ -99,7 +99,7 @@
                                     &nbsp;
                                 </label>
                                 <center class="mb-4">
-                                    <img class="initial-24" id="viewer" onerror="this.src='{{asset('public/assets/admin/img/upload-vertical.png')}}'" src="{{asset('storage/delivery-man').'/'.$delivery_man['image']}}" alt="Deliveryman thumbnail"/>
+                                    <img class="initial-24" id="viewer" onerror="this.src='{{asset('assets/admin/img/upload-vertical.png')}}'" src="{{asset('storage/delivery-man').'/'.$delivery_man['image']}}" alt="Deliveryman thumbnail"/>
                                 </center>
                                 <div class="form-group mb-0">
                                     <label class="form-label d-block">{{translate('deliveryman')}} {{translate('image')}} <small class="text-danger">* ( {{translate('ratio')}} 1:1 )</small></label>
@@ -118,7 +118,7 @@
                                         @foreach(json_decode($delivery_man['identity_image'],true) as $img)
                                             <div class="two__item w-50">
                                                 <div class="max-h-140px existing-item">
-                                                    <img onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/delivery-man').'/'.$img}}">
+                                                    <img onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/delivery-man').'/'.$img}}">
                                                 </div>
                                             </div>
                                         @endforeach
@@ -186,7 +186,7 @@
         });
     </script>
 
-    <script src="{{asset('public/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
+    <script src="{{asset('assets/admin/js/spartan-multi-image-picker.js')}}"></script>
     <script type="text/javascript">
         $(function () {
             $("#coba").spartanMultiImagePicker({
@@ -196,7 +196,7 @@
                 groupClassName: 'two__item',
                 maxFileSize: '',
                 placeholderImage: {
-                    image: '{{asset('public/assets/admin/img/upload-vertical.png')}}',
+                    image: '{{asset('assets/admin/img/upload-vertical.png')}}',
                     width: '100%'
                 },
                 dropFileLabel: "Drop Here",

@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/empty-cart.png')}}" class="w--20" alt="">
+                    <img src="{{asset('assets/admin/img/empty-cart.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{translate('pos')}} {{translate('orders')}} <span class="badge badge-pill badge-soft-secondary ml-2">{{ $orders->total() }}</span>
@@ -97,7 +97,7 @@
                                     {{ translate('options') }}</span>
                                 <a id="export-excel" class="dropdown-item" href="{{route('admin.pos.orders.export', ['branch_id'=>Request::get('branch_id'), 'start_date'=>Request::get('start_date'), 'end_date'=>Request::get('end_date'), 'search'=>Request::get('search')])}}">
                                     <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                        src="{{ asset('public/assets/admin') }}/svg/components/excel.svg"
+                                        src="{{ asset('assets/admin') }}/svg/components/excel.svg"
                                         alt="Image Description">
                                     {{ translate('excel') }}
                                 </a>
@@ -238,7 +238,7 @@
                 <!-- End Table -->
                 @if(count($orders) == 0)
                 <div class="text-center p-4">
-                    <img class="w-120px mb-3" src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
+                    <img class="w-120px mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
                     <p class="mb-0">{{translate('No_data_to_show')}}</p>
                 </div>
                 @endif

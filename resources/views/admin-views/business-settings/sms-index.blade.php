@@ -21,7 +21,7 @@
                         <div class="d-flex flex-wrap justify-content-between align-items-center text-uppercase mb-1">
                             <h5 class="text-center">{{translate('twilio_sms')}}</h5>
                             <div class="pl-2">
-                                <img src="{{asset('public/assets/admin/img/twilio.png')}}" alt="public" style="height: 50px">
+                                <img src="{{asset('assets/admin/img/twilio.png')}}" alt="public" style="height: 50px">
                             </div>
                         </div>
                         <span class="badge badge-soft-info mb-3 word-break">{{ translate('NB : #OTP# will be replace with otp') }}</span>
@@ -86,7 +86,7 @@
                         <div class="d-flex flex-wrap justify-content-between align-items-center text-uppercase mb-1">
                             <h5 class="text-center">{{translate('nexmo_sms')}}</h5>
                             <div class="pl-2">
-                                <img src="{{asset('public/assets/admin/img/nexmo.png')}}" alt="public" style="height: 50px">
+                                <img src="{{asset('assets/admin/img/nexmo.png')}}" alt="public" style="height: 50px">
                             </div>
                         </div>
                         <span class="badge badge-soft-info mb-3 word-break">{{ translate('NB : #OTP# will be replace with otp') }}</span>
@@ -145,7 +145,7 @@
                         <div class="d-flex flex-wrap justify-content-between align-items-center text-uppercase mb-1">
                             <h5 class="text-center">{{translate('2factor_sms')}}</h5>
                             <div class="pl-2">
-                                <img src="{{asset('public/assets/admin/img/2factor.png')}}" alt="public" style="height: 50px">
+                                <img src="{{asset('assets/admin/img/2factor.png')}}" alt="public" style="height: 50px">
                             </div>
                         </div>
                         <span class="badge badge-soft-info word-break">{{ translate("EX of SMS provider's template : your OTP is XXXX here, please check.") }}</span><br>
@@ -188,7 +188,7 @@
                         <div class="d-flex flex-wrap justify-content-between align-items-center text-uppercase mb-1">
                             <h5 class="text-center">{{translate('msg91_sms')}}</h5>
                             <div class="pl-2">
-                                <img src="{{asset('public/assets/admin/img/msg91.png')}}" alt="public" style="height: 50px">
+                                <img src="{{asset('assets/admin/img/msg91.png')}}" alt="public" style="height: 50px">
                             </div>
                         </div>
                         <span class="badge badge-soft-info mb-3 word-break">{{ translate('NB : Keep an OTP variable in your SMS providers OTP Template.') }}</span><br>
@@ -235,7 +235,7 @@
                         <div class="d-flex flex-wrap justify-content-between align-items-center text-uppercase mb-1">
                             <h5 class="text-center">{{translate('signalwire_sms')}}</h5>
                             <div class="pl-2">
-                                <img src="{{asset('public/assets/admin/img/signalwire.png')}}" alt="public" style="height: 50px">
+                                <img src="{{asset('assets/admin/img/signalwire.png')}}" alt="public" style="height: 50px">
                             </div>
                         </div>
                         <span class="badge badge-soft-info mb-3 word-break">{{translate('NB : #OTP# will be replace with otp')}}</span><br>

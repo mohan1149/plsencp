@@ -14,10 +14,10 @@
                 <a class="grid--card" href="{{route('admin.customer.view',[$item['user_id']])}}">
                     @if (!empty(json_decode($item->customer->image,true)))
                         <img src="{{ asset('storage/customer').'/'.json_decode($item->customer->image)[0]  ?? '' }}"
-                             onerror="this.src='{{asset('public/assets/admin/img/admin.jpg')}}'"
+                             onerror="this.src='{{asset('assets/admin/img/admin.jpg')}}'"
                              alt="{{$item->customer->name}} image">
                     @else
-                        <img src="{{asset('public/assets/admin/img/admin.jpg')}}"
+                        <img src="{{asset('assets/admin/img/admin.jpg')}}"
                         >
                     @endif
                     <div class="cont pt-2">

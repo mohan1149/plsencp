@@ -8,7 +8,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/products.png')}}" class="w--24" alt="">
+                    <img src="{{asset('assets/admin/img/products.png')}}" class="w--24" alt="">
                 </span>
                 <span>
                     {{ translate('product List') }}
@@ -52,13 +52,13 @@
 <!--                                    <span class="dropdown-header">{{ translate('options') }}</span>
                                     <a id="export-copy" class="dropdown-item" href="javascript:;">
                                         <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                            src="{{ asset('public/assets/admin') }}/svg/illustrations/copy.svg"
+                                            src="{{ asset('assets/admin') }}/svg/illustrations/copy.svg"
                                             alt="Image Description">
                                         {{ translate('copy') }}
                                     </a>
                                     <a id="export-print" class="dropdown-item" href="javascript:;">
                                         <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                            src="{{ asset('public/assets/admin') }}/svg/illustrations/print.svg"
+                                            src="{{ asset('assets/admin') }}/svg/illustrations/print.svg"
                                             alt="Image Description">
                                         {{ translate('print') }}
                                     </a>
@@ -67,19 +67,19 @@
                                         {{ translate('options') }}</span>
                                     <a id="export-excel" class="dropdown-item" href="{{route('admin.product.bulk-export')}}">
                                         <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                            src="{{ asset('public/assets/admin') }}/svg/components/excel.svg"
+                                            src="{{ asset('assets/admin') }}/svg/components/excel.svg"
                                             alt="Image Description">
                                         {{ translate('excel') }}
                                     </a>
 <!--                                    <a id="export-csv" class="dropdown-item" href="javascript:;">
                                         <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                            src="{{ asset('public/assets/admin') }}/svg/components/placeholder-csv-format.svg"
+                                            src="{{ asset('assets/admin') }}/svg/components/placeholder-csv-format.svg"
                                             alt="Image Description">
                                         .{{ translate('csv') }}
                                     </a>
                                     <a id="export-pdf" class="dropdown-item" href="javascript:;">
                                         <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                            src="{{ asset('public/assets/admin') }}/svg/components/pdf.svg"
+                                            src="{{ asset('assets/admin') }}/svg/components/pdf.svg"
                                             alt="Image Description">
                                         {{ translate('pdf') }}-->
 <!--                                    </a>-->
@@ -120,9 +120,9 @@
                                             @if (!empty(json_decode($product['image'],true)))
                                         <img
                                             src="{{asset('storage/product')}}/{{json_decode($product['image'],true)[0]}}"
-                                            onerror="this.src='{{asset('public/assets/admin/img/400x400/img2.jpg')}}'">
+                                            onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'">
                                         @else
-                                            <img src="{{asset('public/assets/admin/img/400x400/img2.jpg')}}">
+                                            <img src="{{asset('assets/admin/img/400x400/img2.jpg')}}">
                                         @endif
                                         <h6 class="name line--limit-2">
                                             {{\Illuminate\Support\Str::limit($product['name'], 20, $end='...')}}
@@ -188,7 +188,7 @@
                         </div>
                         @if(count($products)==0)
                             <div class="text-center p-4">
-                                <img class="w-120px mb-3" src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
+                                <img class="w-120px mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
                                 <p class="mb-0">{{translate('No_data_to_show')}}</p>
                             </div>
                         @endif

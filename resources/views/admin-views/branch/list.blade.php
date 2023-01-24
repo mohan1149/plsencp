@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/banner.png')}}" class="w--20" alt="">
+                    <img src="{{asset('assets/admin/img/banner.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{translate('branch List')}} <span class="badge badge-soft-secondary">{{ $branches->total() }}</span>
@@ -68,7 +68,7 @@
                                     <td>{{$branches->firstItem()+$key}}</td>
                                     <td>
                                         <div class="short-media">
-                                            <img onerror="this.src='{{asset('public/assets/admin/img/store-1.png')}}'"
+                                            <img onerror="this.src='{{asset('assets/admin/img/store-1.png')}}'"
                                                  src="{{asset('storage/branch')}}/{{$branch['image']}}">
                                             <div class="text-cont">
                                                 <span class="d-block font-size-sm text-body text-trim-50">

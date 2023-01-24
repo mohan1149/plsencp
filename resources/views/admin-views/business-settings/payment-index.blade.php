@@ -114,7 +114,7 @@
                                 </h5>
 
                                 <div class="payment--gateway-img">
-                                    <img src="{{asset('/public/assets/admin/img/sslcomz.png')}}" alt="public">
+                                    <img src="{{asset('/assets/admin/img/sslcomz.png')}}" alt="public">
                                 </div>
 
                                 <div class="form-group">
@@ -163,7 +163,7 @@
                                 </h5>
 
                                 <div class="payment--gateway-img">
-                                    <img src="{{asset('/public/assets/admin/img/razorpay.png')}}" alt="public">
+                                    <img src="{{asset('/assets/admin/img/razorpay.png')}}" alt="public">
                                 </div>
 
                                 <div class="form-group">
@@ -210,7 +210,7 @@
                                 </h5>
 
                                 <div class="payment--gateway-img">
-                                    <img src="{{asset('/public/assets/admin/img/paypal.png')}}" alt="public">
+                                    <img src="{{asset('/assets/admin/img/paypal.png')}}" alt="public">
                                 </div>
 
 
@@ -259,7 +259,7 @@
                                 </h5>
 
                                 <div class="payment--gateway-img">
-                                    <img src="{{asset('/public/assets/admin/img/stripe.png')}}" alt="public">
+                                    <img src="{{asset('/assets/admin/img/stripe.png')}}" alt="public">
                                 </div>
 
                                 <div class="form-group">
@@ -307,7 +307,7 @@
                                 </h5>
 
                                 <div class="payment--gateway-img">
-                                    <img src="{{asset('/public/assets/admin/img/senangpay.png')}}" alt="public">
+                                    <img src="{{asset('/assets/admin/img/senangpay.png')}}" alt="public">
                                 </div>
 
 
@@ -354,7 +354,7 @@
                                 </h5>
 
                                 <div class="payment--gateway-img">
-                                    <img src="{{asset('/public/assets/admin/img/paystack.png')}}" alt="public">
+                                    <img src="{{asset('/assets/admin/img/paystack.png')}}" alt="public">
                                 </div>
 
                                 <div class="form-group">
@@ -412,7 +412,7 @@
                                 </h5>
 
                                 <div class="payment--gateway-img">
-                                    <img src="{{asset('/public/assets/admin/img/bkash.png')}}" alt="public">
+                                    <img src="{{asset('/assets/admin/img/bkash.png')}}" alt="public">
                                 </div>
 
 
@@ -472,7 +472,7 @@
                                 </h5>
 
                                 <div class="payment--gateway-img">
-                                    <img src="{{asset('/public/assets/admin/img/paymob.png')}}" alt="public">
+                                    <img src="{{asset('/assets/admin/img/paymob.png')}}" alt="public">
                                 </div>
 
 
@@ -531,7 +531,7 @@
                                 </h5>
 
                                 <div class="payment--gateway-img">
-                                    <img src="{{asset('/public/assets/admin/img/fluterwave.png')}}" alt="public">
+                                    <img src="{{asset('/assets/admin/img/fluterwave.png')}}" alt="public">
                                 </div>
 
                                 <div class="form-group">
@@ -582,7 +582,7 @@
                                 </h5>
 
                                 <div class="payment--gateway-img">
-                                    <img src="{{asset('/public/assets/admin/img/MercadoPago_(Horizontal).svg')}}" alt="public">
+                                    <img src="{{asset('/assets/admin/img/MercadoPago_(Horizontal).svg')}}" alt="public">
                                 </div>
 
                                 <div class="form-group">

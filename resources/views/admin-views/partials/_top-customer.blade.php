@@ -13,7 +13,7 @@
             @if(isset($item->customer))
                 <a class="grid--card" href="{{route('admin.customer.view',[$item['user_id']])}}">
                 <img src="{{asset('storage/profile/'.$item->customer->image  ?? '' )}}"
-                        onerror="this.src='{{asset('public/assets/admin/img/admin.jpg')}}'"
+                        onerror="this.src='{{asset('assets/admin/img/admin.jpg')}}'"
                         alt="{{$item->customer->name}} image">
                 <div class="cont pt-2">
                     <h6>{{$item->customer['f_name']??'Not exist'}}</h6>

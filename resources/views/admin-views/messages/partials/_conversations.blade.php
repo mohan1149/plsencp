@@ -3,7 +3,7 @@
     <div class="card-header m-2 rounded-0">
         <div class="conv-open-user w-100">
             <img class="avatar-img" src="{{asset('storage/profile/'.$user['image'])}}"
-                 onerror="this.src='{{asset('public/assets/admin')}}/img/160x160/img1.jpg'"
+                 onerror="this.src='{{asset('assets/admin')}}/img/160x160/img1.jpg'"
                  alt="Image Description">
             <div class="info">
                 <h6 class="subtitle">{{$user['f_name'].' '.$user['l_name']}}</h6>
@@ -28,7 +28,7 @@
                                     @foreach($image_array as $image)
                                         <div>
                                             <a href="{{$image}}" data-lightbox >
-                                                <img class="__img-120" src="{{$image}}" onerror="this.src='{{asset('public/assets/admin/img/900x400/img1.jpg')}}'" />
+                                                <img class="__img-120" src="{{$image}}" onerror="this.src='{{asset('assets/admin/img/900x400/img1.jpg')}}'" />
                                             </a>
                                         </div>
                                     @endforeach
@@ -129,8 +129,8 @@
 
 
 </script>
-<script src="{{asset('public/assets/admin')}}/js/tags-input.min.js"></script>
-<script src="{{asset('public/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
+<script src="{{asset('assets/admin')}}/js/tags-input.min.js"></script>
+<script src="{{asset('assets/admin/js/spartan-multi-image-picker.js')}}"></script>
 <script>
     "use strict";
 var lightbox = function (o) {
@@ -323,7 +323,7 @@ Array.prototype.forEach.call(
             groupClassName: 'col-6 col-sm-3 conv-upload-image',
             maxFileSize: '',
             {{--placeholderImage: {--}}
-                {{--    image: '{{asset('public/assets/back-end/img/400x400/img2.jpg')}}',--}}
+                {{--    image: '{{asset('assets/back-end/img/400x400/img2.jpg')}}',--}}
                 {{--    width: '100%',--}}
                 {{--},--}}
             dropFileLabel: "Drop Here",
